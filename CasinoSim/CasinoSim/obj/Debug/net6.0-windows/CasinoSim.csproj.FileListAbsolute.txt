@@ -16,3 +16,4 @@ C:\Neumont\Q6\PrincipalsOfSoftwareEngineering\CasinoSim\CasinoSim\CasinoSim\obj\
 C:\Neumont\Q6\PrincipalsOfSoftwareEngineering\CasinoSim\CasinoSim\CasinoSim\obj\Debug\net6.0-windows\CasinoSim.pdb
 C:\Neumont\Q6\PrincipalsOfSoftwareEngineering\CasinoSim\CasinoSim\CasinoSim\obj\Debug\net6.0-windows\CasinoSim.genruntimeconfig.cache
 C:\Neumont\Q6\PrincipalsOfSoftwareEngineering\CasinoSim\CasinoSim\CasinoSim\obj\Debug\net6.0-windows\ref\CasinoSim.dll
+C:\Neumont\Q6\PrincipalsOfSoftwareEngineering\CasinoSim\CasinoSim\CasinoSim\obj\Debug\net6.0-windows\CasinoSim.Properties.Resources.resources
