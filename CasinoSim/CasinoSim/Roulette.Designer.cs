@@ -42,6 +42,7 @@
             this.low = new System.Windows.Forms.Button();
             this.BetAmount = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.WL = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,7 +107,6 @@
             this.num.Name = "num";
             this.num.Size = new System.Drawing.Size(112, 47);
             this.num.TabIndex = 8;
-            this.num.Text = "number";
             // 
             // custom
             // 
@@ -165,11 +165,20 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Bet Amount: ";
             // 
+            // WL
+            // 
+            this.WL.AutoSize = true;
+            this.WL.Location = new System.Drawing.Point(96, 425);
+            this.WL.Name = "WL";
+            this.WL.Size = new System.Drawing.Size(0, 25);
+            this.WL.TabIndex = 15;
+            // 
             // Roulette
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1168, 642);
+            this.Controls.Add(this.WL);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BetAmount);
             this.Controls.Add(this.low);
@@ -205,5 +214,6 @@
         private Button low;
         private TextBox BetAmount;
         private Label label1;
+        private Label WL;
     }
 }

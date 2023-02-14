@@ -14,16 +14,26 @@ namespace CasinoSim
     {
         Random r = new Random();
         int a = 0;
-        int randomMax = 9;
+        int randomMax = 36;
         public Roulette()
         {
             InitializeComponent();
+            num.PlaceholderText = "# here";
         }
 
         private void custom_Click(object sender, EventArgs e)
         {
             CB.Text = "Bet Square: " + num.Text;
             startGame();
+            if(int.Parse(num.Text) == a)
+            {
+                WL.Text = "WINNER!";
+            }
+            else
+            {
+                WL.Text = "LOSER! Winning Number: " + a;
+            }
+            num.Text = "";
 
         }
 
