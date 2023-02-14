@@ -6,5 +6,12 @@ namespace CasinoSim
         {
             InitializeComponent();
         }
+
+        private void Roulettebtn_Click(object sender, EventArgs e)
+        {
+            Roulette r = new Roulette();
+            r.Show();
+            this.Hide();
+        }
     }
 }
