@@ -67,5 +67,44 @@ namespace CasinoSim
                 WL.Text = "LOSER! Winning Number: " + a;
             }
         }
+
+        private void twelve_Click(object sender, EventArgs e)
+        {
+            startGame();
+            if(a < 13)
+            {
+                WL.Text = "WIINNER!";
+            }
+            else
+            {
+                WL.Text = "LOSER! Winning Number: " + a;
+            }
+        }
+
+        private void thirty_Click(object sender, EventArgs e)
+        {
+            startGame();
+            if (a > 24)
+            {
+                WL.Text = "WIINNER!";
+            }
+            else
+            {
+                WL.Text = "LOSER! Winning Number: " + a;
+            }
+        }
+
+        private void twenty_Click(object sender, EventArgs e)
+        {
+            startGame();
+            if (a > 12 && a < 25)
+            {
+                WL.Text = "WIINNER!";
+            }
+            else
+            {
+                WL.Text = "LOSER! Winning Number: " + a;
+            }
+        }
     }
 }

@@ -83,6 +83,7 @@
             this.twelve.TabIndex = 4;
             this.twelve.Text = "1 - 12";
             this.twelve.UseVisualStyleBackColor = true;
+            this.twelve.Click += new System.EventHandler(this.twelve_Click);
             // 
             // twenty
             // 
@@ -92,6 +93,7 @@
             this.twenty.TabIndex = 5;
             this.twenty.Text = "13 - 24";
             this.twenty.UseVisualStyleBackColor = true;
+            this.twenty.Click += new System.EventHandler(this.twenty_Click);
             // 
             // thirty
             // 
@@ -101,6 +103,7 @@
             this.thirty.TabIndex = 6;
             this.thirty.Text = "25 - 36";
             this.thirty.UseVisualStyleBackColor = true;
+            this.thirty.Click += new System.EventHandler(this.thirty_Click);
             // 
             // num
             // 
