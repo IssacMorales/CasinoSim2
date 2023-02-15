@@ -41,5 +41,31 @@ namespace CasinoSim
         {
             a = r.Next(1, randomMax + 1);
         }
+
+        private void black_Click(object sender, EventArgs e)
+        {
+            startGame();
+            if(a%2 == 1)
+            {
+                WL.Text = "WINNER!!!";
+            }
+            else
+            {
+                WL.Text = "LOSER! Winning Number: " + a;
+            }
+        }
+
+        private void Red_Click(object sender, EventArgs e)
+        {
+            startGame();
+            if (a % 2 == 0)
+            {
+                WL.Text = "WINNER!!!";
+            }
+            else
+            {
+                WL.Text = "LOSER! Winning Number: " + a;
+            }
+        }
     }
 }

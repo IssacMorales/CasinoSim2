@@ -63,6 +63,7 @@
             this.black.TabIndex = 2;
             this.black.Text = "Black";
             this.black.UseVisualStyleBackColor = true;
+            this.black.Click += new System.EventHandler(this.black_Click);
             // 
             // Red
             // 
@@ -72,6 +73,7 @@
             this.Red.TabIndex = 3;
             this.Red.Text = "Red";
             this.Red.UseVisualStyleBackColor = true;
+            this.Red.Click += new System.EventHandler(this.Red_Click);
             // 
             // twelve
             // 
