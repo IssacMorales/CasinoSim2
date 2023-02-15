@@ -25,7 +25,7 @@ namespace CasinoSim
         {
             CB.Text = "Bet Square: " + num.Text;
             startGame();
-            if(int.Parse(num.Text) == a)
+            if (int.Parse(num.Text) == a)
             {
                 WL.Text = "WINNER!";
             }
@@ -45,7 +45,7 @@ namespace CasinoSim
         private void black_Click(object sender, EventArgs e)
         {
             startGame();
-            if(a%2 == 1)
+            if (a % 2 == 1 && a != 0)
             {
                 WL.Text = "WINNER!!!";
             }
@@ -58,7 +58,7 @@ namespace CasinoSim
         private void Red_Click(object sender, EventArgs e)
         {
             startGame();
-            if (a % 2 == 0)
+            if (a % 2 == 0 && a != 0)
             {
                 WL.Text = "WINNER!!!";
             }
@@ -71,7 +71,7 @@ namespace CasinoSim
         private void twelve_Click(object sender, EventArgs e)
         {
             startGame();
-            if(a < 13)
+            if (a < 13 && a != 0)
             {
                 WL.Text = "WIINNER!";
             }
@@ -84,7 +84,7 @@ namespace CasinoSim
         private void thirty_Click(object sender, EventArgs e)
         {
             startGame();
-            if (a > 24)
+            if (a > 24 && a != 0)
             {
                 WL.Text = "WIINNER!";
             }
@@ -97,9 +97,39 @@ namespace CasinoSim
         private void twenty_Click(object sender, EventArgs e)
         {
             startGame();
-            if (a > 12 && a < 25)
+
+            if (a > 12 && a < 25 && a != 0)
             {
                 WL.Text = "WIINNER!";
+            }
+            else
+            {
+                WL.Text = "LOSER! Winning Number: " + a;
+            }
+        }
+
+        private void High_Click(object sender, EventArgs e)
+        {
+            startGame();
+
+            if (a > 18 && a != 0)
+            {
+                WL.Text = "WINNER!!! Winning Number: " + a;
+            }
+            else
+            {
+                WL.Text = "LOSER! Winning Number: " + a;
+            }
+
+        }
+
+        private void low_Click(object sender, EventArgs e)
+        {
+            startGame();
+
+            if (a < 19 && a != 0)
+            {
+                WL.Text = "WINNER!!!  Winning Number: " + a;
             }
             else
             {

@@ -141,6 +141,7 @@
             this.High.TabIndex = 11;
             this.High.Text = "High";
             this.High.UseVisualStyleBackColor = true;
+            this.High.Click += new System.EventHandler(this.High_Click);
             // 
             // low
             // 
@@ -150,6 +151,7 @@
             this.low.TabIndex = 12;
             this.low.Text = "Low";
             this.low.UseVisualStyleBackColor = true;
+            this.low.Click += new System.EventHandler(this.low_Click);
             // 
             // BetAmount
             // 
