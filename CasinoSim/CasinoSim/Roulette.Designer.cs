@@ -112,6 +112,7 @@
             this.num.Name = "num";
             this.num.Size = new System.Drawing.Size(112, 47);
             this.num.TabIndex = 8;
+            this.num.TextChanged += new System.EventHandler(this.num_TextChanged);
             // 
             // custom
             // 

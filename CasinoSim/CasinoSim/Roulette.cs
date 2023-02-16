@@ -47,7 +47,7 @@ namespace CasinoSim
             startGame();
             if (a % 2 == 1 && a != 0)
             {
-                WL.Text = "WINNER!!!";
+                WL.Text = "WINNER!!! ";
             }
             else
             {
@@ -135,6 +135,11 @@ namespace CasinoSim
             {
                 WL.Text = "LOSER! Winning Number: " + a;
             }
+        }
+
+        private void num_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
