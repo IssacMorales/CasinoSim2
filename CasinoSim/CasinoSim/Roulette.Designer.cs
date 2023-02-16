@@ -42,6 +42,7 @@
             this.low = new System.Windows.Forms.Button();
             this.BetAmount = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.WL = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,6 +63,7 @@
             this.black.TabIndex = 2;
             this.black.Text = "Black";
             this.black.UseVisualStyleBackColor = true;
+            this.black.Click += new System.EventHandler(this.black_Click);
             // 
             // Red
             // 
@@ -71,6 +73,7 @@
             this.Red.TabIndex = 3;
             this.Red.Text = "Red";
             this.Red.UseVisualStyleBackColor = true;
+            this.Red.Click += new System.EventHandler(this.Red_Click);
             // 
             // twelve
             // 
@@ -80,6 +83,7 @@
             this.twelve.TabIndex = 4;
             this.twelve.Text = "1 - 12";
             this.twelve.UseVisualStyleBackColor = true;
+            this.twelve.Click += new System.EventHandler(this.twelve_Click);
             // 
             // twenty
             // 
@@ -89,6 +93,7 @@
             this.twenty.TabIndex = 5;
             this.twenty.Text = "13 - 24";
             this.twenty.UseVisualStyleBackColor = true;
+            this.twenty.Click += new System.EventHandler(this.twenty_Click);
             // 
             // thirty
             // 
@@ -98,6 +103,7 @@
             this.thirty.TabIndex = 6;
             this.thirty.Text = "25 - 36";
             this.thirty.UseVisualStyleBackColor = true;
+            this.thirty.Click += new System.EventHandler(this.thirty_Click);
             // 
             // num
             // 
@@ -106,7 +112,7 @@
             this.num.Name = "num";
             this.num.Size = new System.Drawing.Size(112, 47);
             this.num.TabIndex = 8;
-            this.num.Text = "number";
+            this.num.TextChanged += new System.EventHandler(this.num_TextChanged);
             // 
             // custom
             // 
@@ -136,6 +142,7 @@
             this.High.TabIndex = 11;
             this.High.Text = "High";
             this.High.UseVisualStyleBackColor = true;
+            this.High.Click += new System.EventHandler(this.High_Click);
             // 
             // low
             // 
@@ -145,6 +152,7 @@
             this.low.TabIndex = 12;
             this.low.Text = "Low";
             this.low.UseVisualStyleBackColor = true;
+            this.low.Click += new System.EventHandler(this.low_Click);
             // 
             // BetAmount
             // 
@@ -165,11 +173,20 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Bet Amount: ";
             // 
+            // WL
+            // 
+            this.WL.AutoSize = true;
+            this.WL.Location = new System.Drawing.Point(96, 425);
+            this.WL.Name = "WL";
+            this.WL.Size = new System.Drawing.Size(0, 25);
+            this.WL.TabIndex = 15;
+            // 
             // Roulette
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1168, 642);
+            this.Controls.Add(this.WL);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BetAmount);
             this.Controls.Add(this.low);
@@ -205,5 +222,6 @@
         private Button low;
         private TextBox BetAmount;
         private Label label1;
+        private Label WL;
     }
 }
