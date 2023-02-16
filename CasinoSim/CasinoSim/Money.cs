@@ -8,6 +8,6 @@ namespace CasinoSim
 {
     internal class Money
     {
-        public static int buck;
+        public static int buck=1000;
     }
 }
