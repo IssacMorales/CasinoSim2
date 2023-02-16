@@ -2,6 +2,7 @@ namespace CasinoSim
 {
     public partial class Form1 : Form
     {
+        private static int buck;
         public Form1()
         {
             InitializeComponent();
@@ -13,5 +14,10 @@ namespace CasinoSim
             r.Show();
             this.Hide();
         }
+        private static void calc()
+        {
+            buck = Money.buck;
+        }
+      
     }
 }

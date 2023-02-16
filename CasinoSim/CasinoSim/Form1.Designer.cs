@@ -33,7 +33,7 @@
             this.bJackbtn = new System.Windows.Forms.Button();
             this.Roulettebtn = new System.Windows.Forms.Button();
             this.Slotbtn = new System.Windows.Forms.Button();
-            this.Money = new System.Windows.Forms.Label();
+            this.money = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Pokerbtn = new System.Windows.Forms.Button();
             this.Creditbtn = new System.Windows.Forms.Button();
@@ -86,15 +86,15 @@
             this.Slotbtn.Text = "Slots (coming soon)";
             this.Slotbtn.UseVisualStyleBackColor = true;
             // 
-            // Money
+            // money
             // 
-            this.Money.AutoSize = true;
-            this.Money.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Money.Location = new System.Drawing.Point(713, 196);
-            this.Money.Name = "Money";
-            this.Money.Size = new System.Drawing.Size(82, 41);
-            this.Money.TabIndex = 8;
-            this.Money.Text = "1000";
+            this.money.AutoSize = true;
+            this.money.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.money.Location = new System.Drawing.Point(713, 196);
+            this.money.Name = "money";
+            this.money.Size = new System.Drawing.Size(34, 41);
+            this.money.TabIndex = 8;
+            this.money.Text = "0";
             // 
             // label1
             // 
@@ -131,7 +131,7 @@
             this.ClientSize = new System.Drawing.Size(1239, 652);
             this.Controls.Add(this.Creditbtn);
             this.Controls.Add(this.Pokerbtn);
-            this.Controls.Add(this.Money);
+            this.Controls.Add(this.money);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Slotbtn);
             this.Controls.Add(this.Roulettebtn);
@@ -152,7 +152,7 @@
         private Button bJackbtn;
         private Button Roulettebtn;
         private Button Slotbtn;
-        private Label Money;
+        private Label money;
         private Label label1;
         private Button Pokerbtn;
         private Button Creditbtn;
