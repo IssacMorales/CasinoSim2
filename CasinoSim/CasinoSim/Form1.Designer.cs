@@ -85,6 +85,7 @@
             this.Slotbtn.TabIndex = 4;
             this.Slotbtn.Text = "Slots (coming soon)";
             this.Slotbtn.UseVisualStyleBackColor = true;
+            this.Slotbtn.Click += new System.EventHandler(this.Slotbtn_Click);
             // 
             // money
             // 

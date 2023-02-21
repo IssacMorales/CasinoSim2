@@ -78,6 +78,7 @@
             this.Pullbar.TickStyle = System.Windows.Forms.TickStyle.Both;
             this.Pullbar.UseWaitCursor = true;
             this.Pullbar.Value = 10;
+            this.Pullbar.Scroll += new System.EventHandler(this.Pullbar_Scroll);
             // 
             // BetBox
             // 
