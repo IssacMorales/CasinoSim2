@@ -17,11 +17,15 @@ namespace CasinoSim
 
         private static int staticMoney()
         {
-           return Money.buck;
+            return Money.buck;
         }
 
-        int money = staticMoney();
 
+        int money = staticMoney();
+        private void moneyEqual()
+        {
+            Money.buck = money;
+        }
 
         Random r = new Random();
         int a = 0;
@@ -35,12 +39,15 @@ namespace CasinoSim
 
         private void custom_Click(object sender, EventArgs e)
         {
+
+
             CB.Text = "Bet Square: " + num.Text;
             startGame();
             if (int.Parse(num.Text) == a)
             {
+
                 BetAmount.Text.ToString();
-                
+
                 WL.Text = "WINNER!";
             }
             else
