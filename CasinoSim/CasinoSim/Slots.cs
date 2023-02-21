@@ -22,7 +22,7 @@ namespace CasinoSim
 
         private void Pullbar_Scroll(object sender, EventArgs e)
         {
-            if (Pullbar.Value <= 2)
+            if (Pullbar.Value ==1)
             {
                 Spin();
             }
