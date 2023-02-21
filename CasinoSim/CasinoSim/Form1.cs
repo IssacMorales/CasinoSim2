@@ -30,5 +30,7 @@ namespace CasinoSim
             s.Show();
             this.Hide();
         }
+
+        
     }
 }
