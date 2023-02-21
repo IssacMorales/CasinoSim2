@@ -47,6 +47,7 @@
             this.Crapsbtn.TabIndex = 0;
             this.Crapsbtn.Text = "Craps (coming soon)";
             this.Crapsbtn.UseVisualStyleBackColor = true;
+            this.Crapsbtn.Click += new System.EventHandler(this.Crapsbtn_Click);
             // 
             // Title
             // 
