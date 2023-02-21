@@ -162,6 +162,7 @@
             this.BetAmount.Size = new System.Drawing.Size(132, 47);
             this.BetAmount.TabIndex = 13;
             this.BetAmount.Text = "Place Bet";
+            this.BetAmount.TextChanged += new System.EventHandler(this.BetAmount_TextChanged);
             // 
             // label1
             // 

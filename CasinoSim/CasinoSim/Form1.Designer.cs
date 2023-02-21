@@ -105,6 +105,7 @@
             this.label1.Size = new System.Drawing.Size(267, 41);
             this.label1.TabIndex = 7;
             this.label1.Text = "Money Available: $";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Pokerbtn
             // 
@@ -140,6 +141,7 @@
             this.Controls.Add(this.Crapsbtn);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

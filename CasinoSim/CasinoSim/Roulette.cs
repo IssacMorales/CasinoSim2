@@ -12,6 +12,17 @@ namespace CasinoSim
 {
     public partial class Roulette : Form
     {
+        //int money; 
+
+
+        private static int staticMoney()
+        {
+           return Money.buck;
+        }
+
+        int money = staticMoney();
+
+
         Random r = new Random();
         int a = 0;
         int randomMax = 36;
@@ -19,6 +30,7 @@ namespace CasinoSim
         {
             InitializeComponent();
             num.PlaceholderText = "# here";
+
         }
 
         private void custom_Click(object sender, EventArgs e)
@@ -27,6 +39,8 @@ namespace CasinoSim
             startGame();
             if (int.Parse(num.Text) == a)
             {
+                BetAmount.Text.ToString();
+                
                 WL.Text = "WINNER!";
             }
             else
@@ -138,6 +152,11 @@ namespace CasinoSim
         }
 
         private void num_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BetAmount_TextChanged(object sender, EventArgs e)
         {
 
         }
