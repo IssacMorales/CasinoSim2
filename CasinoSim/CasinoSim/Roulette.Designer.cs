@@ -43,6 +43,7 @@
             this.BetAmount = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.WL = new System.Windows.Forms.Label();
+            this.moneyLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -161,8 +162,8 @@
             this.BetAmount.Name = "BetAmount";
             this.BetAmount.Size = new System.Drawing.Size(132, 47);
             this.BetAmount.TabIndex = 13;
-            this.BetAmount.Text = "Place Bet";
             this.BetAmount.TextChanged += new System.EventHandler(this.BetAmount_TextChanged);
+            this.BetAmount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.BetAmount_KeyPress);
             // 
             // label1
             // 
@@ -182,11 +183,22 @@
             this.WL.Size = new System.Drawing.Size(0, 25);
             this.WL.TabIndex = 15;
             // 
+            // moneyLabel
+            // 
+            this.moneyLabel.AutoSize = true;
+            this.moneyLabel.Location = new System.Drawing.Point(46, 425);
+            this.moneyLabel.Name = "moneyLabel";
+            this.moneyLabel.Size = new System.Drawing.Size(71, 25);
+            this.moneyLabel.TabIndex = 16;
+            this.moneyLabel.Text = "Money:";
+            this.moneyLabel.Click += new System.EventHandler(this.label2_Click);
+            // 
             // Roulette
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1168, 642);
+            this.Controls.Add(this.moneyLabel);
             this.Controls.Add(this.WL);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BetAmount);
@@ -203,6 +215,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Roulette";
             this.Text = "number";
+            this.Load += new System.EventHandler(this.Roulette_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -224,5 +237,6 @@
         private TextBox BetAmount;
         private Label label1;
         private Label WL;
+        private Label moneyLabel;
     }
 }

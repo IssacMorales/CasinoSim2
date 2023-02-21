@@ -22,9 +22,17 @@ namespace CasinoSim
 
 
         int money = staticMoney();
-        private void moneyEqual()
+        private void moneyEqual(int money)
         {
             Money.buck = money;
+        }
+        private void addMoney(int money)
+        {
+            Money.buck =+ money;
+        }
+        private void loseMoney(int money)
+        {
+            Money.buck =+ money;
         }
 
         Random r = new Random();
@@ -43,15 +51,22 @@ namespace CasinoSim
 
             CB.Text = "Bet Square: " + num.Text;
             startGame();
+            int theBet;
+            int.TryParse(BetAmount.Text, out theBet);
             if (int.Parse(num.Text) == a)
             {
+               
 
+
+                int thePayOut = theBet * 35;
+                addMoney(thePayOut);
                 BetAmount.Text.ToString();
 
-                WL.Text = "WINNER!";
+                WL.Text = "WINNER! You won $"+(theBet+thePayOut);
             }
             else
             {
+                loseMoney(theBet);
                 WL.Text = "LOSER! Winning Number: " + a;
             }
             num.Text = "";
@@ -164,6 +179,24 @@ namespace CasinoSim
         }
 
         private void BetAmount_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Roulette_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BetAmount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
