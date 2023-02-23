@@ -33,14 +33,15 @@
             this.lblRoll = new System.Windows.Forms.Label();
             this.CB = new System.Windows.Forms.Button();
             this.DCB = new System.Windows.Forms.Button();
+            this.Points = new System.Windows.Forms.Label();
+            this.OddsBTN = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // PL
             // 
-            this.PL.Location = new System.Drawing.Point(574, 463);
-            this.PL.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.PL.Location = new System.Drawing.Point(402, 278);
             this.PL.Name = "PL";
-            this.PL.Size = new System.Drawing.Size(149, 38);
+            this.PL.Size = new System.Drawing.Size(104, 23);
             this.PL.TabIndex = 0;
             this.PL.Text = "Pass Line";
             this.PL.UseVisualStyleBackColor = true;
@@ -48,10 +49,9 @@
             // 
             // DPL
             // 
-            this.DPL.Location = new System.Drawing.Point(574, 540);
-            this.DPL.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.DPL.Location = new System.Drawing.Point(402, 324);
             this.DPL.Name = "DPL";
-            this.DPL.Size = new System.Drawing.Size(149, 38);
+            this.DPL.Size = new System.Drawing.Size(104, 23);
             this.DPL.TabIndex = 1;
             this.DPL.Text = "Don\'t Pass Line";
             this.DPL.UseVisualStyleBackColor = true;
@@ -60,20 +60,18 @@
             // lblRoll
             // 
             this.lblRoll.AutoSize = true;
-            this.lblRoll.Location = new System.Drawing.Point(461, 158);
-            this.lblRoll.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRoll.Location = new System.Drawing.Point(323, 95);
             this.lblRoll.Name = "lblRoll";
-            this.lblRoll.Size = new System.Drawing.Size(77, 25);
+            this.lblRoll.Size = new System.Drawing.Size(51, 15);
             this.lblRoll.TabIndex = 2;
             this.lblRoll.Text = "Number";
             // 
             // CB
             // 
             this.CB.Enabled = false;
-            this.CB.Location = new System.Drawing.Point(757, 463);
-            this.CB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.CB.Location = new System.Drawing.Point(530, 278);
             this.CB.Name = "CB";
-            this.CB.Size = new System.Drawing.Size(149, 38);
+            this.CB.Size = new System.Drawing.Size(104, 23);
             this.CB.TabIndex = 3;
             this.CB.Text = "Come Bet";
             this.CB.UseVisualStyleBackColor = true;
@@ -82,26 +80,47 @@
             // DCB
             // 
             this.DCB.Enabled = false;
-            this.DCB.Location = new System.Drawing.Point(757, 540);
-            this.DCB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.DCB.Location = new System.Drawing.Point(530, 324);
             this.DCB.Name = "DCB";
-            this.DCB.Size = new System.Drawing.Size(149, 38);
+            this.DCB.Size = new System.Drawing.Size(104, 23);
             this.DCB.TabIndex = 4;
             this.DCB.Text = "Don\'t Come Bet";
             this.DCB.UseVisualStyleBackColor = true;
             this.DCB.Click += new System.EventHandler(this.DCB_Click);
             // 
+            // Points
+            // 
+            this.Points.AutoSize = true;
+            this.Points.Location = new System.Drawing.Point(61, 52);
+            this.Points.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Points.Name = "Points";
+            this.Points.Size = new System.Drawing.Size(46, 15);
+            this.Points.TabIndex = 5;
+            this.Points.Text = "Points: ";
+            this.Points.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // OddsBTN
+            // 
+            this.OddsBTN.Location = new System.Drawing.Point(299, 324);
+            this.OddsBTN.Name = "OddsBTN";
+            this.OddsBTN.Size = new System.Drawing.Size(75, 23);
+            this.OddsBTN.TabIndex = 6;
+            this.OddsBTN.Text = "Odds";
+            this.OddsBTN.UseVisualStyleBackColor = true;
+            this.OddsBTN.Click += new System.EventHandler(this.OddsBTN_Click);
+            // 
             // Craps
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1143, 750);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.OddsBTN);
+            this.Controls.Add(this.Points);
             this.Controls.Add(this.DCB);
             this.Controls.Add(this.CB);
             this.Controls.Add(this.lblRoll);
             this.Controls.Add(this.DPL);
             this.Controls.Add(this.PL);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Craps";
             this.Text = "Craps";
             this.ResumeLayout(false);
@@ -116,5 +135,7 @@
         private Label lblRoll;
         private Button CB;
         private Button DCB;
+        private Label Points;
+        private Button OddsBTN;
     }
 }

@@ -19,6 +19,7 @@ namespace CasinoSim
         int randomMax = 6;
         int roll;
         int point = 0;
+        
 
         public Craps()
         {
@@ -47,8 +48,9 @@ namespace CasinoSim
             else
             {
                 lblRoll.Text = roll.ToString();
-                point++;
             }
+            point++;
+            Points.Text = "Points: " + point;
         }
 
         public void DoRoll()
@@ -81,61 +83,75 @@ namespace CasinoSim
             else
             {
                 lblRoll.Text = roll.ToString();
-                point++;
             }
+            point++;
+            Points.Text = "Points: " + point;
         }
 
         private void CB_Click(object sender, EventArgs e)
         {
-            if(point <= 0)
+            DoRoll();
+            if (roll == 7 || roll == 11)
             {
-                lblRoll.Text = "No points";
+                lblRoll.Text = "Winner";
+            }
+            else if (roll == 2 || roll == 3 || roll == 12)
+            {
+                lblRoll.Text = "Loss";
             }
             else
             {
-                DoRoll();
-                if (roll == 7 || roll == 11)
-                {
-                    lblRoll.Text = "Winner";
-                }
-                else if (roll == 2 || roll == 3 || roll == 12)
-                {
-                    lblRoll.Text = "Loss";
-                    point--;
-                }
-                else
-                {
-                    lblRoll.Text = roll.ToString();
-                    point--;
-                }
+                lblRoll.Text = roll.ToString();
             }
+            point++;
+            Points.Text = "Points: " + point;
         }
 
         private void DCB_Click(object sender, EventArgs e)
         {
-            if (point <= 0)
+            DoRoll();
+            if (roll == 7 || roll == 11)
             {
-                lblRoll.Text = "No points";
+                lblRoll.Text = "Loss";
+            }
+            else if (roll == 2 || roll == 3 || roll == 12)
+            {
+                lblRoll.Text = "Winner";
             }
             else
             {
-                DoRoll();
-                if (roll == 7 || roll == 11)
-                {
-                    lblRoll.Text = "Loss";
-                    point--;
-                }
-                else if (roll == 2 || roll == 3 || roll == 12)
-                {
-                    lblRoll.Text = "Winner";
-                    point--;
-                }
-                else
-                {
-                    lblRoll.Text = roll.ToString();
-                    point--;
-                }
+                lblRoll.Text = roll.ToString();
             }
+            point++;
+            Points.Text = "Points: " + point;
         }
+
+        private void OddsBTN_Click(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+        private void OddsBTN_Payoffs(/*object sender, EventArgs e*/)
+        {
+            double payoff = 0;
+
+
+            if (roll == 4 || roll == 10)
+            {
+                payoff = 2.8f;
+            }
+            else if (roll == 5 || roll == 9)
+            {
+                payoff = 1.5f;
+            }
+            else if (roll == 6 || roll == 8)
+            {
+                payoff = 1.2f;
+            }
+
+        }
+
     }
 }
