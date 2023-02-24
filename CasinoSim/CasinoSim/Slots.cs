@@ -25,156 +25,452 @@ namespace CasinoSim
             if (Pullbar.Value ==1)
             {
                 Spin();
+                Pullbar.Value = 10;
             }
         }
         public void Spin()
         {
             Random ran = new Random();
            int img= ran.Next(1, 10);
+            int imgr = ran.Next(1, 10);
+            int imgrr = ran.Next(1, 10);
+
             switch (img)
             {
                 case 1:
-                    if(pictureBox1.Image!= null)
+                    if (pictureBox1.Image != null)
                     {
-                        pictureBox1.Dispose();
-                        pictureBox1.Image = null;
-                        img1= 1;
-                    }
-                    else
-                    {
-                        pictureBox1.Image=Image.FromFile("resource/slot options/r.jpg");
-                        pictureBox1.SizeMode=PictureBoxSizeMode.StretchImage;
+                        
+                        ;
                         img1 = 1;
-
                     }
+
+
+                    pictureBox1.Image = Image.FromFile("resource/slot options/r.jpg");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    img1 = 1;
+
+
                     break;
                 case 2:
                     if (pictureBox1.Image != null)
                     {
-                        pictureBox1.Dispose();
-                        pictureBox1.Image = null;
-                        img1 = 1;
+                        
+                        ;
+                        img1 = 2;
 
                     }
-                    else
-                    {
-                        pictureBox1.Image = Image.FromFile("resource/slot options/r.jpg");
-                        pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                        img1 = 1;
 
-                    }
+
+                    pictureBox1.Image = Image.FromFile("resource/slot options/Reeeeeeeeeeeeeee.png");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    img1 = 2;
+
+
                     break;
                 case 3:
                     if (pictureBox1.Image != null)
                     {
-                        pictureBox1.Dispose();
-                        pictureBox1.Image = null;
-                        img1 = 1;
+                        
+                        ;
+                        img1 = 3;
 
                     }
-                    else
-                    {
-                        pictureBox1.Image = Image.FromFile("resource/slot options/r.jpg");
-                        pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                        img1 = 1;
 
-                    }
+
+                    pictureBox1.Image = Image.FromFile("resource/slot options/the-rock-sus.gif");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    img1 = 3;
+
+
                     break;
                 case 4:
                     if (pictureBox1.Image != null)
                     {
-                        pictureBox1.Dispose();
-                        pictureBox1.Image = null;
-                        img1 = 1;
+                        
+                        ;
+                        img1 = 4;
 
                     }
-                    else
-                    {
-                        pictureBox1.Image = Image.FromFile("resource/slot options/r.jpg");
-                        pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                        img1 = 1;
 
-                    }
+
+                    pictureBox1.Image = Image.FromFile("resource/slot options/chad.jpg");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    img1 = 4;
+
+
                     break;
                 case 5:
                     if (pictureBox1.Image != null)
                     {
-                        pictureBox1.Dispose();
-                        pictureBox1.Image = null;
-                        img1 = 1;
+                        
+                        ;
+                        img1 = 5;
 
                     }
-                    else
-                    {
-                        pictureBox1.Image = Image.FromFile("resource/slot options/r.jpg");
-                        pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                        img1 = 1;
 
-                    }
+
+                    pictureBox1.Image = Image.FromFile("resource/slot options/20220916_235217.jpg");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    img1 = 5;
+
+
                     break;
                 case 6:
                     if (pictureBox1.Image != null)
                     {
-                        pictureBox1.Dispose();
-                        pictureBox1.Image = null;
-                        img1 = 1;
+                        
+                        ;
+                        img1 = 6;
 
                     }
-                    else
-                    {
-                        pictureBox1.Image = Image.FromFile("resource/slot options/r.jpg");
-                        pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                        img1 = 1;
 
-                    }
+
+                    pictureBox1.Image = Image.FromFile("resource/slot options/45zlnq.png");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    img1 = 6;
+
+
                     break;
                 case 7:
                     if (pictureBox1.Image != null)
                     {
-                        pictureBox1.Dispose();
-                        pictureBox1.Image = null;
-                        img1 = 1;
+                        
+                        ;
+                        img1 = 7;
 
                     }
-                    else
-                    {
-                        pictureBox1.Image = Image.FromFile("resource/slot options/r.jpg");
-                        pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                        img1 = 1;
 
-                    }
+
+                    pictureBox1.Image = Image.FromFile("resource/slot options/Shaq.jpg");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    img1 = 7;
+
+
                     break;
                 case 8:
                     if (pictureBox1.Image != null)
                     {
-                        pictureBox1.Dispose();
-                        pictureBox1.Image = null;
-                        img1 = 1;
+                        
+                        ;
+                        img1 = 8;
 
                     }
-                    else
-                    {
-                        pictureBox1.Image = Image.FromFile("resource/slot options/r.jpg");
-                        pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                        img1 = 1;
 
-                    }
+
+                    pictureBox1.Image = Image.FromFile("resource/slot options/americanpsycho.png");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    img1 = 8;
+
+
                     break;
                 case 9:
                     if (pictureBox1.Image != null)
                     {
-                        pictureBox1.Dispose();
-                        pictureBox1.Image = null;
-                        img1 = 1;
+                        
+                        ;
+                        img1 = 9;
 
                     }
-                    else
+
+
+                    pictureBox1.Image = Image.FromFile("resource/slot options/chad.jpg");
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    img1 = 9;
+
+
+                    break;
+            }
+                        switch (imgr)
+            {
+                case 1:
+                    if(pictureBox2.Image!= null)
                     {
-                        pictureBox1.Image = Image.FromFile("resource/slot options/chad.jpg");
-                        pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                        img1 = 1;
+                        
+                        ;
+                        img2= 1;
+                    }
+                    
+                    
+                        pictureBox2.Image=Image.FromFile("resource/slot options/r.jpg");
+                        pictureBox2.SizeMode=PictureBoxSizeMode.StretchImage;
+                        img2 = 1;
+
+                    
+                    break;
+                case 2:
+                    if (pictureBox2.Image != null)
+                    {
+                        
+                        ;
+                        img2 = 2;
 
                     }
+                    
+                    
+                        pictureBox2.Image = Image.FromFile("resource/slot options/Reeeeeeeeeeeeeee.png");
+                        pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+                        img2 = 2;
+
+                    
+                    break;
+                case 3:
+                    if (pictureBox2.Image != null)
+                    {
+                        
+                        ;
+                        img2 = 3;
+
+                    }
+                    
+                    
+                        pictureBox2.Image = Image.FromFile("resource/slot options/the-rock-sus.gif");
+                        pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+                        img2 = 3;
+
+                    
+                    break;
+                case 4:
+                    if (pictureBox2.Image != null)
+                    {
+                        
+                        ;
+                        img2 = 4;
+
+                    }
+                    
+                    
+                        pictureBox2.Image = Image.FromFile("resource/slot options/chad.jpg");
+                        pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+                        img2 = 4;
+
+                    
+                    break;
+                case 5:
+                    if (pictureBox2.Image != null)
+                    {
+                        
+                        ;
+                        img2 = 5;
+
+                    }
+                    
+                    
+                        pictureBox2.Image = Image.FromFile("resource/slot options/20220916_235217.jpg");
+                        pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+                        img2 = 5;
+
+                    
+                    break;
+                case 6:
+                    if (pictureBox2.Image != null)
+                    {
+                        
+                        ;
+                        img2 = 6;
+
+                    }
+                    
+                    
+                        pictureBox2.Image = Image.FromFile("resource/slot options/45zlnq.png");
+                        pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+                        img2 = 6;
+
+                    
+                    break;
+                case 7:
+                    if (pictureBox2.Image != null)
+                    {
+                        
+                        ;
+                        img2 = 7;
+
+                    }
+                    
+                    
+                        pictureBox2.Image = Image.FromFile("resource/slot options/Shaq.jpg");
+                        pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+                        img2 = 7;
+
+                    
+                    break;
+                case 8:
+                    if (pictureBox2.Image != null)
+                    {
+                        
+                        ;
+                        img2 = 8;
+
+                    }
+                    
+                    
+                        pictureBox2.Image = Image.FromFile("resource/slot options/americanpsycho.png");
+                        pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+                        img2 = 8;
+
+                    
+                    break;
+                case 9:
+                    if (pictureBox2.Image != null)
+                    {
+                        
+                        ;
+                        img2 = 9;
+
+                    }
+                    
+                    
+                        pictureBox2.Image = Image.FromFile("resource/slot options/chad.jpg");
+                        pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+                    img2 = 9;
+
+                    
+                    break;
+            }
+                        switch (imgrr)
+            {
+                case 1:
+                    if(pictureBox3.Image!= null)
+                    {
+                        
+                        pictureBox3.Image = null;
+                        img3= 1;
+                    }
+                    
+                    
+                        pictureBox3.Image=Image.FromFile("resource/slot options/r.jpg");
+                        pictureBox3.SizeMode=PictureBoxSizeMode.StretchImage;
+                        img3 = 1;
+
+                    
+                    break;
+                case 2:
+                    if (pictureBox3.Image != null)
+                    {
+                        
+                        pictureBox3.Image = null;
+                        img3 = 2;
+
+                    }
+                    
+                    
+                        pictureBox3.Image = Image.FromFile("resource/slot options/Reeeeeeeeeeeeeee.png");
+                        pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+                        img3 = 2;
+
+                    
+                    break;
+                case 3:
+                    if (pictureBox3.Image != null)
+                    {
+                        
+                        pictureBox3.Image = null;
+                        img3 = 3;
+
+                    }
+                    
+                    
+                        pictureBox3.Image = Image.FromFile("resource/slot options/the-rock-sus.gif");
+                        pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+                        img3 = 3;
+
+                    
+                    break;
+                case 4:
+                    if (pictureBox3.Image != null)
+                    {
+                        
+                        pictureBox3.Image = null;
+                        img3 = 4;
+
+                    }
+                    
+                    
+                        pictureBox3.Image = Image.FromFile("resource/slot options/chad.jpg");
+                        pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+                        img3 = 4;
+
+                    
+                    break;
+                case 5:
+                    if (pictureBox3.Image != null)
+                    {
+                        
+                        pictureBox3.Image = null;
+                        img3 = 5;
+
+                    }
+                    
+                    
+                        pictureBox3.Image = Image.FromFile("resource/slot options/20220916_235217.jpg");
+                        pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+                        img3 = 5;
+
+                    
+                    break;
+                case 6:
+                    if (pictureBox3.Image != null)
+                    {
+                        
+                        pictureBox3.Image = null;
+                        img3 = 6;
+
+                    }
+                    
+                    
+                        pictureBox3.Image = Image.FromFile("resource/slot options/45zlnq.png");
+                        pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+                        img3 = 6;
+
+                    
+                    break;
+                case 7:
+                    if (pictureBox3.Image != null)
+                    {
+                        
+                        pictureBox3.Image = null;
+                        img3 = 7;
+
+                    }
+                    
+                    
+                        pictureBox3.Image = Image.FromFile("resource/slot options/Shaq.jpg");
+                        pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+                        img3 = 7;
+
+                    
+                    break;
+                case 8:
+                    if (pictureBox3.Image != null)
+                    {
+                        
+                        pictureBox3.Image = null;
+                        img3 = 8;
+
+                    }
+                    
+                    
+                        pictureBox3.Image = Image.FromFile("resource/slot options/americanpsycho.png");
+                        pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+                        img3 = 8;
+
+                    
+                    break;
+                case 9:
+                    if (pictureBox3.Image != null)
+                    {
+                        
+                        pictureBox3.Image = null;
+                        img3 = 9;
+
+                    }
+                    
+                    
+                        pictureBox3.Image = Image.FromFile("resource/slot options/chad.jpg");
+                        pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+                    img3 = 9;
+
+                    
                     break;
             }
 
