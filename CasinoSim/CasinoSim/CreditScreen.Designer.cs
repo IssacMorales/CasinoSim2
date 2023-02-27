@@ -41,10 +41,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+<<<<<<< Updated upstream
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+=======
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+>>>>>>> Stashed changes
             this.SuspendLayout();
             // 
             // CreditNameGav
@@ -158,6 +165,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+<<<<<<< Updated upstream
             this.label5.Location = new System.Drawing.Point(291, 212);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 25);
@@ -172,43 +180,89 @@
             this.label6.Size = new System.Drawing.Size(57, 25);
             this.label6.TabIndex = 14;
             this.label6.Text = "Craps";
+=======
+            this.label5.Location = new System.Drawing.Point(291, 122);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(51, 25);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Slots";
+>>>>>>> Stashed changes
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+<<<<<<< Updated upstream
             this.label7.Location = new System.Drawing.Point(398, 72);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(89, 25);
             this.label7.TabIndex = 15;
             this.label7.Text = "Black Jack";
+=======
+            this.label7.Location = new System.Drawing.Point(291, 212);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(57, 25);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Craps";
+>>>>>>> Stashed changes
             // 
             // label8
             // 
             this.label8.AutoSize = true;
+<<<<<<< Updated upstream
             this.label8.Location = new System.Drawing.Point(297, 122);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(51, 25);
             this.label8.TabIndex = 16;
             this.label8.Text = "Slots";
+=======
+            this.label8.Location = new System.Drawing.Point(291, 319);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(57, 25);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Craps";
+>>>>>>> Stashed changes
             // 
             // label9
             // 
             this.label9.AutoSize = true;
+<<<<<<< Updated upstream
             this.label9.Location = new System.Drawing.Point(291, 430);
+=======
+            this.label9.Location = new System.Drawing.Point(291, 427);
+>>>>>>> Stashed changes
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(89, 25);
             this.label9.TabIndex = 17;
             this.label9.Text = "Black Jack";
             // 
+<<<<<<< Updated upstream
+=======
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(398, 72);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(89, 25);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "Black Jack";
+            // 
+>>>>>>> Stashed changes
             // CreditScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1419, 847);
+<<<<<<< Updated upstream
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
+=======
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+>>>>>>> Stashed changes
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -245,9 +299,16 @@
         private Label label3;
         private Label label4;
         private Label label5;
+<<<<<<< Updated upstream
         private Label label6;
         private Label label7;
         private Label label8;
         private Label label9;
+=======
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Label label10;
+>>>>>>> Stashed changes
     }
 }
