@@ -224,5 +224,6 @@
         private TextBox BetAmount;
         private Label label1;
         private Label WL;
+        private Label mny;
     }
 }
