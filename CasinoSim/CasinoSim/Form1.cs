@@ -30,12 +30,5 @@ namespace CasinoSim
             s.Show();
             this.Hide();
         }
-
-        private void Crapsbtn_Click(object sender, EventArgs e)
-        {
-            Craps c = new Craps();
-            c.Show();
-            this.Hide();
-        }
     }
 }
