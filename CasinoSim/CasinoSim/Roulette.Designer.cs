@@ -29,195 +29,184 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Roulette));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.black = new System.Windows.Forms.Button();
-            this.Red = new System.Windows.Forms.Button();
-            this.twelve = new System.Windows.Forms.Button();
-            this.twenty = new System.Windows.Forms.Button();
-            this.thirty = new System.Windows.Forms.Button();
-            this.num = new System.Windows.Forms.TextBox();
-            this.custom = new System.Windows.Forms.Button();
-            this.CB = new System.Windows.Forms.Label();
-            this.High = new System.Windows.Forms.Button();
-            this.low = new System.Windows.Forms.Button();
-            this.BetAmount = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.WL = new System.Windows.Forms.Label();
-            this.mny = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            pictureBox1 = new PictureBox();
+            black = new Button();
+            Red = new Button();
+            twelve = new Button();
+            twenty = new Button();
+            thirty = new Button();
+            num = new TextBox();
+            custom = new Button();
+            CB = new Label();
+            High = new Button();
+            low = new Button();
+            BetAmount = new TextBox();
+            label1 = new Label();
+            WL = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(71, 56);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1034, 341);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(71, 56);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1034, 341);
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
             // 
             // black
             // 
-            this.black.Location = new System.Drawing.Point(689, 435);
-            this.black.Name = "black";
-            this.black.Size = new System.Drawing.Size(112, 34);
-            this.black.TabIndex = 2;
-            this.black.Text = "Black";
-            this.black.UseVisualStyleBackColor = true;
-            this.black.Click += new System.EventHandler(this.black_Click);
+            black.Location = new Point(689, 435);
+            black.Name = "black";
+            black.Size = new Size(112, 34);
+            black.TabIndex = 2;
+            black.Text = "Black";
+            black.UseVisualStyleBackColor = true;
+            black.Click += black_Click;
             // 
             // Red
             // 
-            this.Red.Location = new System.Drawing.Point(844, 435);
-            this.Red.Name = "Red";
-            this.Red.Size = new System.Drawing.Size(112, 34);
-            this.Red.TabIndex = 3;
-            this.Red.Text = "Red";
-            this.Red.UseVisualStyleBackColor = true;
-            this.Red.Click += new System.EventHandler(this.Red_Click);
+            Red.Location = new Point(844, 435);
+            Red.Name = "Red";
+            Red.Size = new Size(112, 34);
+            Red.TabIndex = 3;
+            Red.Text = "Red";
+            Red.UseVisualStyleBackColor = true;
+            Red.Click += Red_Click;
             // 
             // twelve
             // 
-            this.twelve.Location = new System.Drawing.Point(992, 435);
-            this.twelve.Name = "twelve";
-            this.twelve.Size = new System.Drawing.Size(112, 34);
-            this.twelve.TabIndex = 4;
-            this.twelve.Text = "1 - 12";
-            this.twelve.UseVisualStyleBackColor = true;
-            this.twelve.Click += new System.EventHandler(this.twelve_Click);
+            twelve.Location = new Point(992, 435);
+            twelve.Name = "twelve";
+            twelve.Size = new Size(112, 34);
+            twelve.TabIndex = 4;
+            twelve.Text = "1 - 12";
+            twelve.UseVisualStyleBackColor = true;
+            twelve.Click += twelve_Click;
             // 
             // twenty
             // 
-            this.twenty.Location = new System.Drawing.Point(689, 492);
-            this.twenty.Name = "twenty";
-            this.twenty.Size = new System.Drawing.Size(112, 34);
-            this.twenty.TabIndex = 5;
-            this.twenty.Text = "13 - 24";
-            this.twenty.UseVisualStyleBackColor = true;
-            this.twenty.Click += new System.EventHandler(this.twenty_Click);
+            twenty.Location = new Point(689, 492);
+            twenty.Name = "twenty";
+            twenty.Size = new Size(112, 34);
+            twenty.TabIndex = 5;
+            twenty.Text = "13 - 24";
+            twenty.UseVisualStyleBackColor = true;
+            twenty.Click += twenty_Click;
             // 
             // thirty
             // 
-            this.thirty.Location = new System.Drawing.Point(844, 492);
-            this.thirty.Name = "thirty";
-            this.thirty.Size = new System.Drawing.Size(112, 34);
-            this.thirty.TabIndex = 6;
-            this.thirty.Text = "25 - 36";
-            this.thirty.UseVisualStyleBackColor = true;
-            this.thirty.Click += new System.EventHandler(this.thirty_Click);
+            thirty.Location = new Point(844, 492);
+            thirty.Name = "thirty";
+            thirty.Size = new Size(112, 34);
+            thirty.TabIndex = 6;
+            thirty.Text = "25 - 36";
+            thirty.UseVisualStyleBackColor = true;
+            thirty.Click += thirty_Click;
             // 
             // num
             // 
-            this.num.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.num.Location = new System.Drawing.Point(844, 551);
-            this.num.Name = "num";
-            this.num.Size = new System.Drawing.Size(112, 47);
-            this.num.TabIndex = 8;
-            this.num.TextChanged += new System.EventHandler(this.num_TextChanged);
+            num.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            num.Location = new Point(844, 551);
+            num.Name = "num";
+            num.Size = new Size(112, 47);
+            num.TabIndex = 8;
+            num.TextChanged += num_TextChanged;
             // 
             // custom
             // 
-            this.custom.Location = new System.Drawing.Point(992, 561);
-            this.custom.Name = "custom";
-            this.custom.Size = new System.Drawing.Size(112, 34);
-            this.custom.TabIndex = 9;
-            this.custom.Text = "Single";
-            this.custom.UseVisualStyleBackColor = true;
-            this.custom.Click += new System.EventHandler(this.custom_Click);
+            custom.Location = new Point(992, 561);
+            custom.Name = "custom";
+            custom.Size = new Size(112, 34);
+            custom.TabIndex = 9;
+            custom.Text = "Single";
+            custom.UseVisualStyleBackColor = true;
+            custom.Click += custom_Click;
             // 
             // CB
             // 
-            this.CB.AutoSize = true;
-            this.CB.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CB.Location = new System.Drawing.Point(36, 484);
-            this.CB.Name = "CB";
-            this.CB.Size = new System.Drawing.Size(176, 41);
-            this.CB.TabIndex = 10;
-            this.CB.Text = "Bet Square: ";
+            CB.AutoSize = true;
+            CB.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            CB.Location = new Point(36, 484);
+            CB.Name = "CB";
+            CB.Size = new Size(176, 41);
+            CB.TabIndex = 10;
+            CB.Text = "Bet Square: ";
             // 
             // High
             // 
-            this.High.Location = new System.Drawing.Point(992, 492);
-            this.High.Name = "High";
-            this.High.Size = new System.Drawing.Size(112, 34);
-            this.High.TabIndex = 11;
-            this.High.Text = "High";
-            this.High.UseVisualStyleBackColor = true;
-            this.High.Click += new System.EventHandler(this.High_Click);
+            High.Location = new Point(992, 492);
+            High.Name = "High";
+            High.Size = new Size(112, 34);
+            High.TabIndex = 11;
+            High.Text = "High";
+            High.UseVisualStyleBackColor = true;
+            High.Click += High_Click;
             // 
             // low
             // 
-            this.low.Location = new System.Drawing.Point(689, 554);
-            this.low.Name = "low";
-            this.low.Size = new System.Drawing.Size(112, 34);
-            this.low.TabIndex = 12;
-            this.low.Text = "Low";
-            this.low.UseVisualStyleBackColor = true;
-            this.low.Click += new System.EventHandler(this.low_Click);
+            low.Location = new Point(689, 554);
+            low.Name = "low";
+            low.Size = new Size(112, 34);
+            low.TabIndex = 12;
+            low.Text = "Low";
+            low.UseVisualStyleBackColor = true;
+            low.Click += low_Click;
             // 
             // BetAmount
             // 
-            this.BetAmount.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BetAmount.Location = new System.Drawing.Point(233, 554);
-            this.BetAmount.Name = "BetAmount";
-            this.BetAmount.Size = new System.Drawing.Size(132, 47);
-            this.BetAmount.TabIndex = 13;
-            this.BetAmount.Text = "Place Bet";
+            BetAmount.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            BetAmount.Location = new Point(233, 554);
+            BetAmount.Name = "BetAmount";
+            BetAmount.Size = new Size(132, 47);
+            BetAmount.TabIndex = 13;
+            BetAmount.TextChanged += BetAmount_TextChanged;
+            BetAmount.KeyPress += BetAmount_KeyPress;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(36, 554);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 41);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Bet Amount: ";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(36, 554);
+            label1.Name = "label1";
+            label1.Size = new Size(191, 41);
+            label1.TabIndex = 14;
+            label1.Text = "Bet Amount: ";
             // 
             // WL
             // 
-            this.WL.AutoSize = true;
-            this.WL.Location = new System.Drawing.Point(96, 425);
-            this.WL.Name = "WL";
-            this.WL.Size = new System.Drawing.Size(0, 25);
-            this.WL.TabIndex = 15;
-            // 
-            // mny
-            // 
-            this.mny.AutoSize = true;
-            this.mny.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.mny.Location = new System.Drawing.Point(36, 435);
-            this.mny.Name = "mny";
-            this.mny.Size = new System.Drawing.Size(281, 41);
-            this.mny.TabIndex = 16;
-            this.mny.Text = "Money: Placeholder";
+            WL.AutoSize = true;
+            WL.Location = new Point(96, 425);
+            WL.Name = "WL";
+            WL.Size = new Size(0, 25);
+            WL.TabIndex = 15;
             // 
             // Roulette
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1168, 642);
-            this.Controls.Add(this.mny);
-            this.Controls.Add(this.WL);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.BetAmount);
-            this.Controls.Add(this.low);
-            this.Controls.Add(this.High);
-            this.Controls.Add(this.CB);
-            this.Controls.Add(this.custom);
-            this.Controls.Add(this.num);
-            this.Controls.Add(this.thirty);
-            this.Controls.Add(this.twenty);
-            this.Controls.Add(this.twelve);
-            this.Controls.Add(this.Red);
-            this.Controls.Add(this.black);
-            this.Controls.Add(this.pictureBox1);
-            this.Name = "Roulette";
-            this.Text = "number";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1168, 642);
+            Controls.Add(WL);
+            Controls.Add(label1);
+            Controls.Add(BetAmount);
+            Controls.Add(low);
+            Controls.Add(High);
+            Controls.Add(CB);
+            Controls.Add(custom);
+            Controls.Add(num);
+            Controls.Add(thirty);
+            Controls.Add(twenty);
+            Controls.Add(twelve);
+            Controls.Add(Red);
+            Controls.Add(black);
+            Controls.Add(pictureBox1);
+            Name = "Roulette";
+            Text = "number";
+            Load += Roulette_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
