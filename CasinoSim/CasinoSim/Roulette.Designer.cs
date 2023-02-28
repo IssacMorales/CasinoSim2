@@ -43,7 +43,7 @@
             this.BetAmount = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.WL = new System.Windows.Forms.Label();
-            this.mny = new System.Windows.Forms.Label();
+            this.cMoney = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +64,6 @@
             this.black.TabIndex = 2;
             this.black.Text = "Black";
             this.black.UseVisualStyleBackColor = true;
-            this.black.Click += new System.EventHandler(this.black_Click);
             // 
             // Red
             // 
@@ -74,7 +73,6 @@
             this.Red.TabIndex = 3;
             this.Red.Text = "Red";
             this.Red.UseVisualStyleBackColor = true;
-            this.Red.Click += new System.EventHandler(this.Red_Click);
             // 
             // twelve
             // 
@@ -84,7 +82,6 @@
             this.twelve.TabIndex = 4;
             this.twelve.Text = "1 - 12";
             this.twelve.UseVisualStyleBackColor = true;
-            this.twelve.Click += new System.EventHandler(this.twelve_Click);
             // 
             // twenty
             // 
@@ -94,7 +91,6 @@
             this.twenty.TabIndex = 5;
             this.twenty.Text = "13 - 24";
             this.twenty.UseVisualStyleBackColor = true;
-            this.twenty.Click += new System.EventHandler(this.twenty_Click);
             // 
             // thirty
             // 
@@ -104,7 +100,6 @@
             this.thirty.TabIndex = 6;
             this.thirty.Text = "25 - 36";
             this.thirty.UseVisualStyleBackColor = true;
-            this.thirty.Click += new System.EventHandler(this.thirty_Click);
             // 
             // num
             // 
@@ -113,7 +108,6 @@
             this.num.Name = "num";
             this.num.Size = new System.Drawing.Size(112, 47);
             this.num.TabIndex = 8;
-            this.num.TextChanged += new System.EventHandler(this.num_TextChanged);
             // 
             // custom
             // 
@@ -123,7 +117,6 @@
             this.custom.TabIndex = 9;
             this.custom.Text = "Single";
             this.custom.UseVisualStyleBackColor = true;
-            this.custom.Click += new System.EventHandler(this.custom_Click);
             // 
             // CB
             // 
@@ -143,7 +136,6 @@
             this.High.TabIndex = 11;
             this.High.Text = "High";
             this.High.UseVisualStyleBackColor = true;
-            this.High.Click += new System.EventHandler(this.High_Click);
             // 
             // low
             // 
@@ -153,7 +145,6 @@
             this.low.TabIndex = 12;
             this.low.Text = "Low";
             this.low.UseVisualStyleBackColor = true;
-            this.low.Click += new System.EventHandler(this.low_Click);
             // 
             // BetAmount
             // 
@@ -162,7 +153,6 @@
             this.BetAmount.Name = "BetAmount";
             this.BetAmount.Size = new System.Drawing.Size(132, 47);
             this.BetAmount.TabIndex = 13;
-            this.BetAmount.Text = "Place Bet";
             // 
             // label1
             // 
@@ -182,22 +172,22 @@
             this.WL.Size = new System.Drawing.Size(0, 25);
             this.WL.TabIndex = 15;
             // 
-            // mny
+            // cMoney
             // 
-            this.mny.AutoSize = true;
-            this.mny.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.mny.Location = new System.Drawing.Point(36, 435);
-            this.mny.Name = "mny";
-            this.mny.Size = new System.Drawing.Size(281, 41);
-            this.mny.TabIndex = 16;
-            this.mny.Text = "Money: Placeholder";
+            this.cMoney.AutoSize = true;
+            this.cMoney.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cMoney.Location = new System.Drawing.Point(385, 563);
+            this.cMoney.Name = "cMoney";
+            this.cMoney.Size = new System.Drawing.Size(101, 32);
+            this.cMoney.TabIndex = 16;
+            this.cMoney.Text = "Money: ";
             // 
             // Roulette
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1168, 642);
-            this.Controls.Add(this.mny);
+            this.Controls.Add(this.cMoney);
             this.Controls.Add(this.WL);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BetAmount);
@@ -236,5 +226,6 @@
         private Label label1;
         private Label WL;
         private Label mny;
+        private Label cMoney;
     }
 }
