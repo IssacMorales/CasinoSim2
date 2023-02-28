@@ -166,6 +166,34 @@ namespace CasinoSim
 
         }
 
-        
+        private void pb_Click(object sender, EventArgs e)
+        {
+            /*Once a shooter makes a point, you may make a “place bet” on numbers 
+             * 4, 5, 6, 8, 9, and 10. If the shooter rolls any of these numbers 
+             * before a 7, you win the following payoffs: 9 to 5 on 4 and 10, 7 
+             * to 5 on 5 and 9, and 7 to 6 on 6 and 8.*/
+
+            DoRoll();
+            if(roll == 4 || roll == 10)
+            {
+                lblRoll.Text = "9-5 win";
+            }
+            else if(roll == 5 || roll == 9)
+            {
+                lblRoll.Text = "7-5 win";
+            }
+            else if(roll == 6 || roll == 8)
+            {
+                lblRoll.Text = "7-6 win";
+            }
+            else if(roll == 7)
+            {
+                lblRoll.Text = "Winner";
+            }
+            else
+            {
+                lblRoll.Text = "Loss";
+            }
+        }
     }
 }

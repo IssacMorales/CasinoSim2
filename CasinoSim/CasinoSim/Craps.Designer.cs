@@ -35,7 +35,7 @@
             this.DCB = new System.Windows.Forms.Button();
             this.Points = new System.Windows.Forms.Label();
             this.OddsBTN = new System.Windows.Forms.Button();
-            this.Even = new System.Windows.Forms.Button();
+            this.pb = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // PL
@@ -116,22 +116,24 @@
             this.OddsBTN.UseVisualStyleBackColor = true;
             this.OddsBTN.Click += new System.EventHandler(this.OddsBTN_Click);
             // 
-            // Even
+            // pb
             // 
-            this.Even.Enabled = false;
-            this.Even.Location = new System.Drawing.Point(431, 463);
-            this.Even.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Even.Name = "Even";
-            this.Even.Size = new System.Drawing.Size(107, 38);
-            this.Even.TabIndex = 7;
-            this.Even.UseVisualStyleBackColor = true;
+            this.pb.Enabled = false;
+            this.pb.Location = new System.Drawing.Point(431, 463);
+            this.pb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pb.Name = "pb";
+            this.pb.Size = new System.Drawing.Size(107, 38);
+            this.pb.TabIndex = 7;
+            this.pb.Text = "Place Bet";
+            this.pb.UseVisualStyleBackColor = true;
+            this.pb.Click += new System.EventHandler(this.pb_Click);
             // 
             // Craps
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1143, 750);
-            this.Controls.Add(this.Even);
+            this.Controls.Add(this.pb);
             this.Controls.Add(this.OddsBTN);
             this.Controls.Add(this.Points);
             this.Controls.Add(this.DCB);
@@ -156,6 +158,6 @@
         private Button DCB;
         private Label Points;
         private Button OddsBTN;
-        private Button Even;
+        private Button pb;
     }
 }
