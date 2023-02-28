@@ -7,7 +7,7 @@ namespace CasinoSim
         public Form1()
         {
             InitializeComponent();
-            
+           money.Text=Calc().ToString();
         }
 
         private void Roulettebtn_Click(object sender, EventArgs e)

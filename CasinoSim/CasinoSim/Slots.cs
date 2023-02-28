@@ -15,17 +15,23 @@ namespace CasinoSim
         int img1;
         int img2;
         int img3;
+        int bet;
+        int start = Money.buck;
         public Slots()
         {
             InitializeComponent();
+            Mons.Text = start.ToString();
         }
 
         private void Pullbar_Scroll(object sender, EventArgs e)
         {
-            if (Pullbar.Value ==1)
+            if (Pullbar.Value <=1)
             {
+                int.TryParse(BetBox.Text, out bet);
+
                 Spin();
                 Pullbar.Value = 10;
+               
             }
         }
         public void Spin()
@@ -473,7 +479,32 @@ namespace CasinoSim
                     
                     break;
             }
+            if (img3==img2&&img2==img1) {
+                Money.buck += bet*img1 * 10;
+                Mons.Text = Money.buck.ToString();
 
+            }
+            else
+            {
+                Money.buck -= bet;
+                Mons.Text = Money.buck.ToString();
+
+            }
+        }
+
+        private void Keypress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                BetBox.Text += e.KeyChar;
+            }
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            Form1 f=new Form1();
+            f.Show();
+            this.Dispose();
         }
     }
 }
