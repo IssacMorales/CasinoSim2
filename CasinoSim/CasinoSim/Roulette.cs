@@ -45,7 +45,7 @@ namespace CasinoSim
         {
             InitializeComponent();
             num.PlaceholderText = "# here";
-            moneyEqual();
+            moneyEqual(theBet);
         }
 
         private void custom_Click(object sender, EventArgs e)
@@ -247,6 +247,5 @@ namespace CasinoSim
                 e.Handled = true;
             }
         }
-
     }
 }

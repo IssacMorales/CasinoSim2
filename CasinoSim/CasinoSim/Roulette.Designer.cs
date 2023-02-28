@@ -64,6 +64,7 @@
             this.black.TabIndex = 2;
             this.black.Text = "Black";
             this.black.UseVisualStyleBackColor = true;
+            this.black.Click += new System.EventHandler(this.black_Click);
             // 
             // Red
             // 
@@ -73,6 +74,7 @@
             this.Red.TabIndex = 3;
             this.Red.Text = "Red";
             this.Red.UseVisualStyleBackColor = true;
+            this.Red.Click += new System.EventHandler(this.Red_Click);
             // 
             // twelve
             // 
@@ -82,6 +84,7 @@
             this.twelve.TabIndex = 4;
             this.twelve.Text = "1 - 12";
             this.twelve.UseVisualStyleBackColor = true;
+            this.twelve.Click += new System.EventHandler(this.twelve_Click);
             // 
             // twenty
             // 
@@ -91,6 +94,7 @@
             this.twenty.TabIndex = 5;
             this.twenty.Text = "13 - 24";
             this.twenty.UseVisualStyleBackColor = true;
+            this.twenty.Click += new System.EventHandler(this.twenty_Click);
             // 
             // thirty
             // 
@@ -100,6 +104,7 @@
             this.thirty.TabIndex = 6;
             this.thirty.Text = "25 - 36";
             this.thirty.UseVisualStyleBackColor = true;
+            this.thirty.Click += new System.EventHandler(this.thirty_Click);
             // 
             // num
             // 
@@ -117,6 +122,7 @@
             this.custom.TabIndex = 9;
             this.custom.Text = "Single";
             this.custom.UseVisualStyleBackColor = true;
+            this.custom.Click += new System.EventHandler(this.custom_Click);
             // 
             // CB
             // 
@@ -136,6 +142,7 @@
             this.High.TabIndex = 11;
             this.High.Text = "High";
             this.High.UseVisualStyleBackColor = true;
+            this.High.Click += new System.EventHandler(this.High_Click);
             // 
             // low
             // 
@@ -145,6 +152,7 @@
             this.low.TabIndex = 12;
             this.low.Text = "Low";
             this.low.UseVisualStyleBackColor = true;
+            this.low.Click += new System.EventHandler(this.low_Click);
             // 
             // BetAmount
             // 
