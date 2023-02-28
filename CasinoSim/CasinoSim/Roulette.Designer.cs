@@ -44,6 +44,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.WL = new System.Windows.Forms.Label();
             this.cMoney = new System.Windows.Forms.Label();
+            this.BACK = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -190,11 +191,22 @@
             this.cMoney.TabIndex = 16;
             this.cMoney.Text = "Money: ";
             // 
+            // BACK
+            // 
+            this.BACK.Location = new System.Drawing.Point(12, 3);
+            this.BACK.Name = "BACK";
+            this.BACK.Size = new System.Drawing.Size(73, 45);
+            this.BACK.TabIndex = 17;
+            this.BACK.Text = "BACK";
+            this.BACK.UseVisualStyleBackColor = true;
+            this.BACK.Click += new System.EventHandler(this.BACK_Click);
+            // 
             // Roulette
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1168, 642);
+            this.Controls.Add(this.BACK);
             this.Controls.Add(this.cMoney);
             this.Controls.Add(this.WL);
             this.Controls.Add(this.label1);
@@ -235,5 +247,6 @@
         private Label WL;
         private Label mny;
         private Label cMoney;
+        private Button BACK;
     }
 }

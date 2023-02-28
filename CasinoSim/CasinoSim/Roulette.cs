@@ -49,7 +49,7 @@ namespace CasinoSim
         {
             InitializeComponent();
             num.PlaceholderText = "# here";
-            moneyEqual(theBet);
+            moneyEqual();
         }
 
         private void custom_Click(object sender, EventArgs e)
@@ -91,7 +91,7 @@ namespace CasinoSim
 
             if (a % 2 == 1 && a != 0)
             {
-                int thePayOut = theBet * 35;
+                int thePayOut = theBet * 2;
                 addMoney(thePayOut);
                 BetAmount.Text.ToString();
                 WL.Text = "WINNER!!! ";
@@ -112,7 +112,7 @@ namespace CasinoSim
 
             if (a % 2 == 0 && a != 0)
             {
-                int thePayOut = theBet * 35;
+                int thePayOut = theBet * 2;
                 addMoney(thePayOut);
                 BetAmount.Text.ToString();
                 WL.Text = "WINNER!!!";
@@ -133,7 +133,7 @@ namespace CasinoSim
 
             if (a < 13 && a != 0)
             {
-                int thePayOut = theBet * 35;
+                int thePayOut = theBet * 3;
                 addMoney(thePayOut);
                 BetAmount.Text.ToString();
                 WL.Text = "WIINNER!";
@@ -154,7 +154,7 @@ namespace CasinoSim
 
             if (a > 24 && a != 0)
             {
-                int thePayOut = theBet * 35;
+                int thePayOut = theBet * 3;
                 addMoney(thePayOut);
                 BetAmount.Text.ToString();
                 WL.Text = "WIINNER!";
@@ -174,7 +174,7 @@ namespace CasinoSim
             int.TryParse(BetAmount.Text, out theBet);
             if (a > 12 && a < 25 && a != 0)
             {
-                int thePayOut = theBet * 35;
+                int thePayOut = theBet * 3;
                 addMoney(thePayOut);
                 BetAmount.Text.ToString();
                 WL.Text = "WIINNER!";
@@ -195,7 +195,7 @@ namespace CasinoSim
 
             if (a > 18 && a != 0)
             {
-                int thePayOut = theBet * 35;
+                int thePayOut = theBet * 2;
                 addMoney(thePayOut);
                 BetAmount.Text.ToString();
                 WL.Text = "WINNER!!! Winning Number: " + a;
@@ -216,7 +216,7 @@ namespace CasinoSim
 
             if (a < 19 && a != 0)
             {
-                int thePayOut = theBet * 35;
+                int thePayOut = theBet * 2;
                 addMoney(thePayOut);
                 BetAmount.Text.ToString();
                 WL.Text = "WINNER!!!  Winning Number: " + a;
@@ -250,6 +250,13 @@ namespace CasinoSim
             {
                 e.Handled = true;
             }
+        }
+
+        private void BACK_Click(object sender, EventArgs e)
+        {
+            Form1 f = new Form1();
+            f.Show();
+            this.Dispose();
         }
     }
 }
