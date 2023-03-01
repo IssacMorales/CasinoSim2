@@ -33,6 +33,9 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.Pullbar = new System.Windows.Forms.TrackBar();
             this.BetBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Mons = new System.Windows.Forms.Label();
+            this.Back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -88,12 +91,43 @@
             this.BetBox.PlaceholderText = "Bet Amount";
             this.BetBox.Size = new System.Drawing.Size(219, 47);
             this.BetBox.TabIndex = 4;
+            this.BetBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Keypress);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(24, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 25);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "MONEY:";
+            // 
+            // Mons
+            // 
+            this.Mons.AutoSize = true;
+            this.Mons.Location = new System.Drawing.Point(97, 29);
+            this.Mons.Name = "Mons";
+            this.Mons.Size = new System.Drawing.Size(0, 25);
+            this.Mons.TabIndex = 6;
+            // 
+            // Back
+            // 
+            this.Back.Location = new System.Drawing.Point(39, 388);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(112, 34);
+            this.Back.TabIndex = 7;
+            this.Back.Text = "Home";
+            this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
             // Slots
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Back);
+            this.Controls.Add(this.Mons);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.BetBox);
             this.Controls.Add(this.Pullbar);
             this.Controls.Add(this.pictureBox3);
@@ -117,5 +151,8 @@
         private PictureBox pictureBox3;
         private TrackBar Pullbar;
         private TextBox BetBox;
+        private Label label1;
+        private Label Mons;
+        private Button Back;
     }
 }

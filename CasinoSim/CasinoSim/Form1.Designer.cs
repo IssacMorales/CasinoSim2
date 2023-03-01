@@ -94,9 +94,8 @@
             this.money.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.money.Location = new System.Drawing.Point(713, 197);
             this.money.Name = "money";
-            this.money.Size = new System.Drawing.Size(34, 41);
+            this.money.Size = new System.Drawing.Size(0, 41);
             this.money.TabIndex = 8;
-            this.money.Text = "0";
             // 
             // label1
             // 
