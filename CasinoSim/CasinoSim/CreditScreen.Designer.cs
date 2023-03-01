@@ -29,29 +29,23 @@
         private void InitializeComponent()
         {
             this.CreditNameGav = new System.Windows.Forms.Label();
-            this.CreditationJon = new System.Windows.Forms.Label();
-            this.CreditationDar = new System.Windows.Forms.Label();
+            this.Credit10 = new System.Windows.Forms.Label();
+            this.Credit12 = new System.Windows.Forms.Label();
             this.CreditNameDar = new System.Windows.Forms.Label();
             this.CreditNameJon = new System.Windows.Forms.Label();
             this.CreditNameIss = new System.Windows.Forms.Label();
-            this.CreditationIss = new System.Windows.Forms.Label();
-            this.CreditationGav = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-<<<<<<< Updated upstream
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-=======
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
->>>>>>> Stashed changes
+            this.Credit1 = new System.Windows.Forms.Label();
+            this.Credit13 = new System.Windows.Forms.Label();
+            this.Credit11 = new System.Windows.Forms.Label();
+            this.Credit8 = new System.Windows.Forms.Label();
+            this.Credit3 = new System.Windows.Forms.Label();
+            this.Credit4 = new System.Windows.Forms.Label();
+            this.Credit5 = new System.Windows.Forms.Label();
+            this.Credit6 = new System.Windows.Forms.Label();
+            this.Credit7 = new System.Windows.Forms.Label();
+            this.Credit2 = new System.Windows.Forms.Label();
+            this.Credit9 = new System.Windows.Forms.Label();
+            this.BackBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CreditNameGav
@@ -63,23 +57,23 @@
             this.CreditNameGav.TabIndex = 0;
             this.CreditNameGav.Text = "Gavin Zellner";
             // 
-            // CreditationJon
+            // Credit10
             // 
-            this.CreditationJon.AutoSize = true;
-            this.CreditationJon.Location = new System.Drawing.Point(291, 269);
-            this.CreditationJon.Name = "CreditationJon";
-            this.CreditationJon.Size = new System.Drawing.Size(116, 25);
-            this.CreditationJon.TabIndex = 1;
-            this.CreditationJon.Text = "Credit Screen";
+            this.Credit10.AutoSize = true;
+            this.Credit10.Location = new System.Drawing.Point(291, 269);
+            this.Credit10.Name = "Credit10";
+            this.Credit10.Size = new System.Drawing.Size(116, 25);
+            this.Credit10.TabIndex = 1;
+            this.Credit10.Text = "Credit Screen";
             // 
-            // CreditationDar
+            // Credit12
             // 
-            this.CreditationDar.AutoSize = true;
-            this.CreditationDar.Location = new System.Drawing.Point(291, 380);
-            this.CreditationDar.Name = "CreditationDar";
-            this.CreditationDar.Size = new System.Drawing.Size(129, 25);
-            this.CreditationDar.TabIndex = 2;
-            this.CreditationDar.Text = "Money System";
+            this.Credit12.AutoSize = true;
+            this.Credit12.Location = new System.Drawing.Point(291, 380);
+            this.Credit12.Name = "Credit12";
+            this.Credit12.Size = new System.Drawing.Size(129, 25);
+            this.Credit12.TabIndex = 2;
+            this.Credit12.Text = "Money System";
             // 
             // CreditNameDar
             // 
@@ -108,173 +102,137 @@
             this.CreditNameIss.TabIndex = 5;
             this.CreditNameIss.Text = "Issac Morales";
             // 
-            // CreditationIss
+            // Credit1
             // 
-            this.CreditationIss.AutoSize = true;
-            this.CreditationIss.Location = new System.Drawing.Point(291, 162);
-            this.CreditationIss.Name = "CreditationIss";
-            this.CreditationIss.Size = new System.Drawing.Size(101, 25);
-            this.CreditationIss.TabIndex = 7;
-            this.CreditationIss.Text = "Title Screen";
+            this.Credit1.AutoSize = true;
+            this.Credit1.Location = new System.Drawing.Point(291, 162);
+            this.Credit1.Name = "Credit1";
+            this.Credit1.Size = new System.Drawing.Size(101, 25);
+            this.Credit1.TabIndex = 7;
+            this.Credit1.Text = "Title Screen";
             // 
-            // CreditationGav
+            // Credit13
             // 
-            this.CreditationGav.AutoSize = true;
-            this.CreditationGav.Location = new System.Drawing.Point(291, 405);
-            this.CreditationGav.Name = "CreditationGav";
-            this.CreditationGav.Size = new System.Drawing.Size(51, 25);
-            this.CreditationGav.TabIndex = 8;
-            this.CreditationGav.Text = "Slots";
+            this.Credit13.AutoSize = true;
+            this.Credit13.Location = new System.Drawing.Point(291, 405);
+            this.Credit13.Name = "Credit13";
+            this.Credit13.Size = new System.Drawing.Size(51, 25);
+            this.Credit13.TabIndex = 8;
+            this.Credit13.Text = "Slots";
             // 
-            // label1
+            // Credit11
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(291, 294);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 25);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Slots";
+            this.Credit11.AutoSize = true;
+            this.Credit11.Location = new System.Drawing.Point(291, 294);
+            this.Credit11.Name = "Credit11";
+            this.Credit11.Size = new System.Drawing.Size(51, 25);
+            this.Credit11.TabIndex = 9;
+            this.Credit11.Text = "Slots";
             // 
-            // label2
+            // Credit8
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(291, 187);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 25);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Roulette";
+            this.Credit8.AutoSize = true;
+            this.Credit8.Location = new System.Drawing.Point(291, 187);
+            this.Credit8.Name = "Credit8";
+            this.Credit8.Size = new System.Drawing.Size(77, 25);
+            this.Credit8.TabIndex = 10;
+            this.Credit8.Text = "Roulette";
             // 
-            // label3
+            // Credit3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(291, 97);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 25);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Roulette";
+            this.Credit3.AutoSize = true;
+            this.Credit3.Location = new System.Drawing.Point(291, 97);
+            this.Credit3.Name = "Credit3";
+            this.Credit3.Size = new System.Drawing.Size(77, 25);
+            this.Credit3.TabIndex = 11;
+            this.Credit3.Text = "Roulette";
             // 
-            // label4
+            // Credit4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(291, 72);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 25);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Title Screen";
+            this.Credit4.AutoSize = true;
+            this.Credit4.Location = new System.Drawing.Point(291, 72);
+            this.Credit4.Name = "Credit4";
+            this.Credit4.Size = new System.Drawing.Size(101, 25);
+            this.Credit4.TabIndex = 12;
+            this.Credit4.Text = "Title Screen";
             // 
-            // label5
+            // Credit5
             // 
-            this.label5.AutoSize = true;
-<<<<<<< Updated upstream
-            this.label5.Location = new System.Drawing.Point(291, 212);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 25);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Craps";
+            this.Credit5.AutoSize = true;
+            this.Credit5.Location = new System.Drawing.Point(291, 212);
+            this.Credit5.Name = "Credit5";
+            this.Credit5.Size = new System.Drawing.Size(57, 25);
+            this.Credit5.TabIndex = 13;
+            this.Credit5.Text = "Craps";
             // 
-            // label6
+            // Credit6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(291, 319);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 25);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Craps";
-=======
-            this.label5.Location = new System.Drawing.Point(291, 122);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 25);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Slots";
->>>>>>> Stashed changes
+            this.Credit6.AutoSize = true;
+            this.Credit6.Location = new System.Drawing.Point(291, 319);
+            this.Credit6.Name = "Credit6";
+            this.Credit6.Size = new System.Drawing.Size(57, 25);
+            this.Credit6.TabIndex = 14;
+            this.Credit6.Text = "Craps";
             // 
-            // label7
+            // Credit7
             // 
-            this.label7.AutoSize = true;
-<<<<<<< Updated upstream
-            this.label7.Location = new System.Drawing.Point(398, 72);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 25);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Black Jack";
-=======
-            this.label7.Location = new System.Drawing.Point(291, 212);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(57, 25);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Craps";
->>>>>>> Stashed changes
+            this.Credit7.AutoSize = true;
+            this.Credit7.Location = new System.Drawing.Point(398, 72);
+            this.Credit7.Name = "Credit7";
+            this.Credit7.Size = new System.Drawing.Size(89, 25);
+            this.Credit7.TabIndex = 15;
+            this.Credit7.Text = "Black Jack";
             // 
-            // label8
+            // Credit2
             // 
-            this.label8.AutoSize = true;
-<<<<<<< Updated upstream
-            this.label8.Location = new System.Drawing.Point(297, 122);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(51, 25);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "Slots";
-=======
-            this.label8.Location = new System.Drawing.Point(291, 319);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(57, 25);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "Craps";
->>>>>>> Stashed changes
+            this.Credit2.AutoSize = true;
+            this.Credit2.Location = new System.Drawing.Point(297, 122);
+            this.Credit2.Name = "Credit2";
+            this.Credit2.Size = new System.Drawing.Size(51, 25);
+            this.Credit2.TabIndex = 16;
+            this.Credit2.Text = "Slots";
             // 
-            // label9
+            // Credit9
             // 
-            this.label9.AutoSize = true;
-<<<<<<< Updated upstream
-            this.label9.Location = new System.Drawing.Point(291, 430);
-=======
-            this.label9.Location = new System.Drawing.Point(291, 427);
->>>>>>> Stashed changes
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(89, 25);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Black Jack";
+            this.Credit9.AutoSize = true;
+            this.Credit9.Location = new System.Drawing.Point(291, 430);
+            this.Credit9.Name = "Credit9";
+            this.Credit9.Size = new System.Drawing.Size(89, 25);
+            this.Credit9.TabIndex = 17;
+            this.Credit9.Text = "Black Jack";
             // 
-<<<<<<< Updated upstream
-=======
-            // label10
+            // BackBtn
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(398, 72);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(89, 25);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "Black Jack";
+            this.BackBtn.Location = new System.Drawing.Point(1274, 801);
+            this.BackBtn.Name = "BackBtn";
+            this.BackBtn.Size = new System.Drawing.Size(133, 34);
+            this.BackBtn.TabIndex = 18;
+            this.BackBtn.Text = "Back to Menu";
+            this.BackBtn.UseVisualStyleBackColor = true;
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
->>>>>>> Stashed changes
             // CreditScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1419, 847);
-<<<<<<< Updated upstream
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-=======
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
->>>>>>> Stashed changes
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.CreditationGav);
-            this.Controls.Add(this.CreditationIss);
+            this.Controls.Add(this.BackBtn);
+            this.Controls.Add(this.Credit9);
+            this.Controls.Add(this.Credit2);
+            this.Controls.Add(this.Credit7);
+            this.Controls.Add(this.Credit6);
+            this.Controls.Add(this.Credit5);
+            this.Controls.Add(this.Credit4);
+            this.Controls.Add(this.Credit3);
+            this.Controls.Add(this.Credit8);
+            this.Controls.Add(this.Credit11);
+            this.Controls.Add(this.Credit13);
+            this.Controls.Add(this.Credit1);
             this.Controls.Add(this.CreditNameIss);
             this.Controls.Add(this.CreditNameJon);
             this.Controls.Add(this.CreditNameDar);
-            this.Controls.Add(this.CreditationDar);
-            this.Controls.Add(this.CreditationJon);
+            this.Controls.Add(this.Credit12);
+            this.Controls.Add(this.Credit10);
             this.Controls.Add(this.CreditNameGav);
             this.Name = "CreditScreen";
             this.Text = "CreditScreen";
@@ -287,28 +245,28 @@
         #endregion
 
         private Label CreditNameGav;
-        private Label CreditationJon;
-        private Label CreditationDar;
+        private Label Credit10;
+        private Label Credit12;
         private Label CreditNameDar;
         private Label CreditNameJon;
         private Label CreditNameIss;
-        private Label CreditationIss;
-        private Label CreditationGav;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-<<<<<<< Updated upstream
-        private Label label6;
-        private Label label7;
-        private Label label8;
-        private Label label9;
-=======
+        private Label Credit1;
+        private Label Credit13;
+        private Label Credit11;
+        private Label Credit8;
+        private Label Credit3;
+        private Label Credit4;
+        private Label Credit5;
+
+        private Label Credit6;
+        private Label Credit7;
+        private Label Credit2;
+        private Label Credit9;
+
         private Label label7;
         private Label label8;
         private Label label9;
         private Label label10;
->>>>>>> Stashed changes
+        private Button BackBtn;
     }
 }

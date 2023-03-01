@@ -37,5 +37,12 @@ namespace CasinoSim
             c.Show();
             this.Hide();
         }
+
+        private void Creditbtn_Click(object sender, EventArgs e)
+        {
+            CreditScreen cs = new CreditScreen();
+            cs.Show();
+            this.Hide();
+        }
     }
 }

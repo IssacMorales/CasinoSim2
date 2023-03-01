@@ -36,6 +36,7 @@
             this.Points = new System.Windows.Forms.Label();
             this.OddsBTN = new System.Windows.Forms.Button();
             this.Even = new System.Windows.Forms.Button();
+            this.BackBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // PL
@@ -126,11 +127,22 @@
             this.Even.TabIndex = 7;
             this.Even.UseVisualStyleBackColor = true;
             // 
+            // BackBtn
+            // 
+            this.BackBtn.Location = new System.Drawing.Point(998, 704);
+            this.BackBtn.Name = "BackBtn";
+            this.BackBtn.Size = new System.Drawing.Size(133, 34);
+            this.BackBtn.TabIndex = 19;
+            this.BackBtn.Text = "Back to Menu";
+            this.BackBtn.UseVisualStyleBackColor = true;
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
+            // 
             // Craps
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1143, 750);
+            this.Controls.Add(this.BackBtn);
             this.Controls.Add(this.Even);
             this.Controls.Add(this.OddsBTN);
             this.Controls.Add(this.Points);
@@ -157,5 +169,6 @@
         private Label Points;
         private Button OddsBTN;
         private Button Even;
+        private Button BackBtn;
     }
 }

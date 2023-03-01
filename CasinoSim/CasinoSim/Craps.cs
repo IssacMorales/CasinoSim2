@@ -166,6 +166,13 @@ namespace CasinoSim
 
         }
 
-        
+        private void BackBtn_Click(object sender, EventArgs e)
+        {
+
+            Form1 mm = new Form1();
+            mm.Show();
+            this.Hide();
+
+        }
     }
 }
