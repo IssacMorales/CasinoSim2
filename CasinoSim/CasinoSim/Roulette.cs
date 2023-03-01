@@ -23,7 +23,7 @@ namespace CasinoSim
 
 
         int money = staticMoney();
-        private void moneyEqual()
+        private void moneyEqual( )
         {
             Money.buck = money;
             cMoney.Text = "Money: " + money.ToString();
