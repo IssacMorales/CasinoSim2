@@ -3,11 +3,11 @@ namespace CasinoSim
     public partial class Form1 : Form
     {
         private static int buck;
-       
+
         public Form1()
         {
             InitializeComponent();
-           money.Text=Calc().ToString();
+            money.Text = Calc().ToString();
         }
 
         private void Roulettebtn_Click(object sender, EventArgs e)
@@ -15,7 +15,7 @@ namespace CasinoSim
             Roulette r = new Roulette();
             r.Show();
             this.Hide();
-            
+
         }
         private static int Calc()
         {
@@ -26,7 +26,7 @@ namespace CasinoSim
 
         private void Slotbtn_Click(object sender, EventArgs e)
         {
-            Slots s=new Slots();
+            Slots s = new Slots();
             s.Show();
             this.Hide();
         }
@@ -35,6 +35,13 @@ namespace CasinoSim
         {
             Craps c = new Craps();
             c.Show();
+            this.Hide();
+        }
+
+        private void bJackbtn_Click(object sender, EventArgs e)
+        {
+            bJack bJack = new bJack();
+            bJack.Show();
             this.Hide();
         }
     }

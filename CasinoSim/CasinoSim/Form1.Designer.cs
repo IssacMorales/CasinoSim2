@@ -28,122 +28,122 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Crapsbtn = new System.Windows.Forms.Button();
-            this.Title = new System.Windows.Forms.Label();
-            this.bJackbtn = new System.Windows.Forms.Button();
-            this.Roulettebtn = new System.Windows.Forms.Button();
-            this.Slotbtn = new System.Windows.Forms.Button();
-            this.money = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Pokerbtn = new System.Windows.Forms.Button();
-            this.Creditbtn = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            Crapsbtn = new Button();
+            Title = new Label();
+            bJackbtn = new Button();
+            Roulettebtn = new Button();
+            Slotbtn = new Button();
+            money = new Label();
+            label1 = new Label();
+            Pokerbtn = new Button();
+            Creditbtn = new Button();
+            SuspendLayout();
             // 
             // Crapsbtn
             // 
-            this.Crapsbtn.Location = new System.Drawing.Point(126, 323);
-            this.Crapsbtn.Name = "Crapsbtn";
-            this.Crapsbtn.Size = new System.Drawing.Size(264, 77);
-            this.Crapsbtn.TabIndex = 0;
-            this.Crapsbtn.Text = "Craps (coming soon)";
-            this.Crapsbtn.UseVisualStyleBackColor = true;
-            this.Crapsbtn.Click += new System.EventHandler(this.Crapsbtn_Click);
+            Crapsbtn.Location = new Point(126, 323);
+            Crapsbtn.Name = "Crapsbtn";
+            Crapsbtn.Size = new Size(264, 77);
+            Crapsbtn.TabIndex = 0;
+            Crapsbtn.Text = "Craps (coming soon)";
+            Crapsbtn.UseVisualStyleBackColor = true;
+            Crapsbtn.Click += Crapsbtn_Click;
             // 
             // Title
             // 
-            this.Title.AutoSize = true;
-            this.Title.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Title.Location = new System.Drawing.Point(310, 43);
-            this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(626, 81);
-            this.Title.TabIndex = 1;
-            this.Title.Text = "Casino-Man Simulator";
+            Title.AutoSize = true;
+            Title.Font = new Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point);
+            Title.Location = new Point(310, 43);
+            Title.Name = "Title";
+            Title.Size = new Size(626, 81);
+            Title.TabIndex = 1;
+            Title.Text = "Casino-Man Simulator";
             // 
             // bJackbtn
             // 
-            this.bJackbtn.Location = new System.Drawing.Point(861, 323);
-            this.bJackbtn.Name = "bJackbtn";
-            this.bJackbtn.Size = new System.Drawing.Size(264, 77);
-            this.bJackbtn.TabIndex = 2;
-            this.bJackbtn.Text = "Black Jack (coming soon)";
-            this.bJackbtn.UseVisualStyleBackColor = true;
+            bJackbtn.Location = new Point(861, 323);
+            bJackbtn.Name = "bJackbtn";
+            bJackbtn.Size = new Size(264, 77);
+            bJackbtn.TabIndex = 2;
+            bJackbtn.Text = "Black Jack (coming soon)";
+            bJackbtn.UseVisualStyleBackColor = true;
+            bJackbtn.Click += bJackbtn_Click;
             // 
             // Roulettebtn
             // 
-            this.Roulettebtn.Location = new System.Drawing.Point(126, 458);
-            this.Roulettebtn.Name = "Roulettebtn";
-            this.Roulettebtn.Size = new System.Drawing.Size(264, 77);
-            this.Roulettebtn.TabIndex = 3;
-            this.Roulettebtn.Text = "Roulette (coming soon)";
-            this.Roulettebtn.UseVisualStyleBackColor = true;
-            this.Roulettebtn.Click += new System.EventHandler(this.Roulettebtn_Click);
+            Roulettebtn.Location = new Point(126, 458);
+            Roulettebtn.Name = "Roulettebtn";
+            Roulettebtn.Size = new Size(264, 77);
+            Roulettebtn.TabIndex = 3;
+            Roulettebtn.Text = "Roulette (coming soon)";
+            Roulettebtn.UseVisualStyleBackColor = true;
+            Roulettebtn.Click += Roulettebtn_Click;
             // 
             // Slotbtn
             // 
-            this.Slotbtn.Location = new System.Drawing.Point(861, 458);
-            this.Slotbtn.Name = "Slotbtn";
-            this.Slotbtn.Size = new System.Drawing.Size(264, 77);
-            this.Slotbtn.TabIndex = 4;
-            this.Slotbtn.Text = "Slots (coming soon)";
-            this.Slotbtn.UseVisualStyleBackColor = true;
-            this.Slotbtn.Click += new System.EventHandler(this.Slotbtn_Click);
+            Slotbtn.Location = new Point(861, 458);
+            Slotbtn.Name = "Slotbtn";
+            Slotbtn.Size = new Size(264, 77);
+            Slotbtn.TabIndex = 4;
+            Slotbtn.Text = "Slots (coming soon)";
+            Slotbtn.UseVisualStyleBackColor = true;
+            Slotbtn.Click += Slotbtn_Click;
             // 
             // money
             // 
-            this.money.AutoSize = true;
-            this.money.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.money.Location = new System.Drawing.Point(713, 197);
-            this.money.Name = "money";
-            this.money.Size = new System.Drawing.Size(0, 41);
-            this.money.TabIndex = 8;
+            money.AutoSize = true;
+            money.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            money.Location = new Point(713, 197);
+            money.Name = "money";
+            money.Size = new Size(0, 41);
+            money.TabIndex = 8;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(453, 197);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(267, 41);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Money Available: $";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(453, 197);
+            label1.Name = "label1";
+            label1.Size = new Size(267, 41);
+            label1.TabIndex = 7;
+            label1.Text = "Money Available: $";
             // 
             // Pokerbtn
             // 
-            this.Pokerbtn.Location = new System.Drawing.Point(494, 397);
-            this.Pokerbtn.Name = "Pokerbtn";
-            this.Pokerbtn.Size = new System.Drawing.Size(264, 77);
-            this.Pokerbtn.TabIndex = 9;
-            this.Pokerbtn.Text = "Poker (coming soon)";
-            this.Pokerbtn.UseVisualStyleBackColor = true;
+            Pokerbtn.Location = new Point(494, 397);
+            Pokerbtn.Name = "Pokerbtn";
+            Pokerbtn.Size = new Size(264, 77);
+            Pokerbtn.TabIndex = 9;
+            Pokerbtn.Text = "Poker (coming soon)";
+            Pokerbtn.UseVisualStyleBackColor = true;
             // 
             // Creditbtn
             // 
-            this.Creditbtn.Location = new System.Drawing.Point(1114, 607);
-            this.Creditbtn.Name = "Creditbtn";
-            this.Creditbtn.Size = new System.Drawing.Size(111, 33);
-            this.Creditbtn.TabIndex = 10;
-            this.Creditbtn.Text = "Credits";
-            this.Creditbtn.UseVisualStyleBackColor = true;
+            Creditbtn.Location = new Point(1114, 607);
+            Creditbtn.Name = "Creditbtn";
+            Creditbtn.Size = new Size(111, 33);
+            Creditbtn.TabIndex = 10;
+            Creditbtn.Text = "Credits";
+            Creditbtn.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1239, 652);
-            this.Controls.Add(this.Creditbtn);
-            this.Controls.Add(this.Pokerbtn);
-            this.Controls.Add(this.money);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.Slotbtn);
-            this.Controls.Add(this.Roulettebtn);
-            this.Controls.Add(this.bJackbtn);
-            this.Controls.Add(this.Title);
-            this.Controls.Add(this.Crapsbtn);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1239, 652);
+            Controls.Add(Creditbtn);
+            Controls.Add(Pokerbtn);
+            Controls.Add(money);
+            Controls.Add(label1);
+            Controls.Add(Slotbtn);
+            Controls.Add(Roulettebtn);
+            Controls.Add(bJackbtn);
+            Controls.Add(Title);
+            Controls.Add(Crapsbtn);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
