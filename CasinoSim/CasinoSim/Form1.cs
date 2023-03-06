@@ -7,7 +7,7 @@ namespace CasinoSim
         public Form1()
         {
             InitializeComponent();
-            
+           money.Text=Calc().ToString();
         }
 
         private void Roulettebtn_Click(object sender, EventArgs e)
@@ -35,6 +35,13 @@ namespace CasinoSim
         {
             Craps c = new Craps();
             c.Show();
+            this.Hide();
+        }
+
+        private void Pokerbtn_Click(object sender, EventArgs e)
+        {
+            Poker p = new Poker();
+            p.Show();
             this.Hide();
         }
     }
