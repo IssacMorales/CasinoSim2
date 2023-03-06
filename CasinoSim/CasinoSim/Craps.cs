@@ -32,7 +32,7 @@ namespace CasinoSim
             DoRoll();
             if(roll == 7 || roll == 11)
             {
-                lblRoll.Text = "Winner";
+                lblRoll.Text = "Continue";
                 PL.Enabled = false;
                 DPL.Enabled = false;
                 CB.Enabled = true;
@@ -81,7 +81,7 @@ namespace CasinoSim
             }
             else if (roll == 2 || roll == 3 || roll == 12)
             {
-                lblRoll.Text = "Winner";
+                lblRoll.Text = "Continue";
                 PL.Enabled = false;
                 DPL.Enabled = false;
                 CB.Enabled = true;
@@ -102,7 +102,7 @@ namespace CasinoSim
             DoRoll();
             if (roll == 7 || roll == 11)
             {
-                lblRoll.Text = "Winner";
+                lblRoll.Text = "Continue";
             }
             else if (roll == 2 || roll == 3 || roll == 12)
             {
@@ -125,7 +125,7 @@ namespace CasinoSim
             }
             else if (roll == 2 || roll == 3 || roll == 12)
             {
-                lblRoll.Text = "Winner";
+                lblRoll.Text = "Continue";
             }
             else
             {
