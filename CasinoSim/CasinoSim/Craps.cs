@@ -47,6 +47,7 @@ namespace CasinoSim
                 DPL.Enabled = false;
                 CB.Enabled = true;
                 DCB.Enabled = true;
+                OddsBTN.Enabled = true;
                 pb.Enabled = true;
             }
             else
@@ -136,13 +137,6 @@ namespace CasinoSim
 
         private void OddsBTN_Click(object sender, EventArgs e)
         {
-            //Once a point is made on the first roll or a come
-            //point on a succeeding roll, you may take the odds
-            //and win if the point or come points are made
-            //before a 7. Payoffs are: 2 to 1 on 4 and 10, 3 to 2
-            //for 5 and 9, 6 to 5 on 6 and 8. “Don’t pass” or
-            //“don’t come” bets are in reverse: you must lay the
-            //odds in order to win.
             DoRoll();
             double payoff = 0;
 
