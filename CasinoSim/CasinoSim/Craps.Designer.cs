@@ -101,9 +101,9 @@
             this.Points.AutoSize = true;
             this.Points.Location = new System.Drawing.Point(87, 87);
             this.Points.Name = "Points";
-            this.Points.Size = new System.Drawing.Size(69, 25);
+            this.Points.Size = new System.Drawing.Size(76, 25);
             this.Points.TabIndex = 5;
-            this.Points.Text = "Points: ";
+            this.Points.Text = "Money: ";
             this.Points.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // OddsBTN
