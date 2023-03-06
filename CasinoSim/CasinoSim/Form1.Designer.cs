@@ -115,6 +115,7 @@
             this.Pokerbtn.TabIndex = 9;
             this.Pokerbtn.Text = "Poker (coming soon)";
             this.Pokerbtn.UseVisualStyleBackColor = true;
+            this.Pokerbtn.Click += new System.EventHandler(this.Pokerbtn_Click);
             // 
             // Creditbtn
             // 

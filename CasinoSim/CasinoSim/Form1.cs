@@ -37,5 +37,12 @@ namespace CasinoSim
             c.Show();
             this.Hide();
         }
+
+        private void Pokerbtn_Click(object sender, EventArgs e)
+        {
+            Poker p = new Poker();
+            p.Show();
+            this.Hide();
+        }
     }
 }
