@@ -472,7 +472,7 @@ namespace CasinoSim
                     }
                     
                     
-                        pictureBox3.Image = Image.FromFile("resource/slot options/chad.jpg");
+                        pictureBox3.Image = Image.FromFile("CARDS");
                         pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
                     img3 = 9;
 
