@@ -21,11 +21,7 @@ namespace CasinoSim
         private bool Card5 = true;
         private string[] cards = Directory.GetFiles("CARDS").OrderBy(f => f).ToArray();
         private string[] hands = new string[5];
-        private string hand1;
-        private string hand2;
-        private string hand3;
-        private string hand4;
-        private string hand5;
+     
         private bool FirstDraw=true;
         public Poker()
         {
@@ -108,12 +104,17 @@ namespace CasinoSim
                 {
                     Randomizer(pictureBox5, 5);
                 }
+                FirstDraw = !FirstDraw;
+
 
             }
 
         }
         private void checkHand() {
-            string newCardNum;
+            string newCardNum="";
+            string newCardSuit="";
+            int[] value= new int[5];
+            string[] values=new string[5];
            
                 for (int i = 0; i < hands.Length; i++)
                 {
@@ -164,23 +165,35 @@ namespace CasinoSim
                             newCardNum = "MISTAKE";
                             break;
                     }
+
                 switch (testcard)
                 {
                     case var _ when testcard.Contains("heart"):
-                        newCardNum += "h";
+                        newCardSuit = "h";
                         break;
                     case var _ when testcard.Contains("spade"):
-                        newCardNum += "s";
+                        newCardSuit = "s";
                         break;
                     case var _ when testcard.Contains("club"):
-                        newCardNum += "c";
+                        newCardSuit = "c";
                         break;
                     case var _ when testcard.Contains("diam"):
-                        newCardNum += "d";
+                        newCardSuit = "d";
                         break;
                 }
+                value[i] = int.Parse(newCardNum);
 
+                values[i] = newCardSuit;
                 }
+            Straight(value[0], values[0], value[1], values[1], value[2], values[2], value[3], values[3], value[4], values[4]);
             }
+        private void Straight(int one, string ones, int two,string twos,int three, string threes,int four,string fours,int five,string fives )
+        {
+            if ((one-- == two || one++ == two) && (one-- == two || one++ == two)&& (one-- == two || one++ == two)&& (one-- == two || one++ == two))
+            {
+
+            }
+
+        }
         } 
 }

@@ -82,11 +82,11 @@
         }
         private void nextTurn()
         {
-            if (Money.buck>=0)
+            if (Money.buck >= 0)
             {
                 Form1 form = new Form1();
                 form.Show();
-                this.Hide();
+                this.Dispose();
             }
             blackjacLlabel.Text = "";
 
@@ -247,6 +247,8 @@
                     boolSplitHand = true;
                     addToHand(1);
                 }
+            turn = TurnCount.EnemyTurn;
+            nextTurn();
             }
         }
 
@@ -266,9 +268,10 @@
             {
 
                 addToHand(1);
-            }
             turn = TurnCount.EnemyTurn;
+            nextTurn();
 
+            }
         }
 
         private void standBtn_Click(object sender, EventArgs e)
@@ -277,7 +280,10 @@
             {
                 addToHand(0);
                 turn = TurnCount.EnemyTurn;
+                nextTurn();
+
             }
+
         }
 
         private void addToHand(int amount)

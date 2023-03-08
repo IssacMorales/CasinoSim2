@@ -42,12 +42,16 @@ namespace CasinoSim
         {
             Poker p = new Poker();
             p.Show();
+            this.Hide();
 
         }
         private void bJackbtn_Click(object sender, EventArgs e)
         {
             bJack blackJack = new bJack();
             blackJack.Show();
+            this.Hide();    
+
+
 
         }
         private void Creditbtn_Click(object sender, EventArgs e)
