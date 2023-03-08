@@ -125,6 +125,7 @@
             this.Creditbtn.TabIndex = 10;
             this.Creditbtn.Text = "Credits";
             this.Creditbtn.UseVisualStyleBackColor = true;
+            this.Creditbtn.Click += new System.EventHandler(this.Creditbtn_Click);
             // 
             // Form1
             // 

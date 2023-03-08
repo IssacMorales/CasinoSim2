@@ -42,6 +42,10 @@ namespace CasinoSim
         {
             Poker p = new Poker();
             p.Show();
+        private void Creditbtn_Click(object sender, EventArgs e)
+        {
+            CreditScreen cs = new CreditScreen();
+            cs.Show();
             this.Hide();
         }
     }
